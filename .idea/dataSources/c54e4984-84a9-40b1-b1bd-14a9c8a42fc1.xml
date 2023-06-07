@@ -3,15 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.40">
     <root id="1">
       <DateStyle>dmy</DateStyle>
-      <Grants>1||-9223372036854775808|c|G
-1||10|c|G
-1||10|C|G
-1||10|T|G
-13753||-9223372036854775808|c|G
-13753||10|c|G
-13753||10|C|G
-13753||10|T|G</Grants>
-      <IntrospectionStateNumber>4875</IntrospectionStateNumber>
+      <IntrospectionStateNumber>4888</IntrospectionStateNumber>
       <ServerVersion>14.2</ServerVersion>
       <StartupTime>1685257589</StartupTime>
       <TimeZones>true ACDT
@@ -861,8 +853,12 @@ false Zulu
 13388||10|C|G
 13388||-9223372036854775808|U|G
 13388||10|U|G</Grants>
-      <IntrospectionStateNumber>4875</IntrospectionStateNumber>
+      <IntrospectionStateNumber>4888</IntrospectionStateNumber>
       <ObjectId>13754</ObjectId>
+      <Relations>sequence|table|41888|41889|1
+sequence|table|41894|41895|1
+sequence|table|41905|41906|1
+</Relations>
       <OwnerName>postgres</OwnerName>
     </database>
     <database id="16" parent="1" name="project1">
@@ -4298,10 +4294,247 @@ false Zulu
     <schema id="277" parent="15" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>4875</IntrospectionStateNumber>
+      <IntrospectionStateNumber>4888</IntrospectionStateNumber>
       <ObjectId>2200</ObjectId>
       <StateNumber>527</StateNumber>
       <OwnerName>postgres</OwnerName>
     </schema>
+    <sequence id="278" parent="277" name="authors_id_seq">
+      <DataType>bigint|0s</DataType>
+      <ObjectId>41888</ObjectId>
+      <StateNumber>4877</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <sequence id="279" parent="277" name="news_id_seq">
+      <DataType>bigint|0s</DataType>
+      <ObjectId>41894</ObjectId>
+      <StateNumber>4879</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <sequence id="280" parent="277" name="tags_id_seq">
+      <DataType>bigint|0s</DataType>
+      <ObjectId>41905</ObjectId>
+      <StateNumber>4881</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <table id="281" parent="277" name="authors">
+      <ObjectId>41889</ObjectId>
+      <StateNumber>4879</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="282" parent="277" name="news">
+      <ObjectId>41895</ObjectId>
+      <StateNumber>4879</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="283" parent="277" name="news_tags">
+      <ObjectId>41926</ObjectId>
+      <StateNumber>4887</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="284" parent="277" name="tags">
+      <ObjectId>41906</ObjectId>
+      <StateNumber>4883</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <column id="285" parent="281" name="id">
+      <DataType>bigint|0s</DataType>
+      <IdentityKind>always</IdentityKind>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>4877</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="286" parent="281" name="name">
+      <DataType>varchar(15)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>4877</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="287" parent="281" name="create_date">
+      <DataType>timestamp|0s</DataType>
+      <Position>3</Position>
+      <StateNumber>4877</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="288" parent="281" name="last_update_date">
+      <DataType>timestamp|0s</DataType>
+      <Position>4</Position>
+      <StateNumber>4877</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="289" parent="281" name="authors_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>41892</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4877</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="290" parent="281" name="authors_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>41893</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4877</StateNumber>
+      <UnderlyingIndexId>41892</UnderlyingIndexId>
+    </key>
+    <column id="291" parent="282" name="id">
+      <DataType>bigint|0s</DataType>
+      <IdentityKind>always</IdentityKind>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>4879</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="292" parent="282" name="title">
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>4879</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="293" parent="282" name="content">
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>4879</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="294" parent="282" name="create_date">
+      <DataType>timestamp|0s</DataType>
+      <Position>4</Position>
+      <StateNumber>4879</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="295" parent="282" name="last_update_date">
+      <DataType>timestamp|0s</DataType>
+      <Position>5</Position>
+      <StateNumber>4879</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="296" parent="282" name="author_id">
+      <DataType>bigint|0s</DataType>
+      <Position>6</Position>
+      <StateNumber>4879</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <foreign-key id="297" parent="282" name="news_author_id_fkey">
+      <ColNames>author_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>41900</ObjectId>
+      <OnDelete>set-null</OnDelete>
+      <RefColNames>id</RefColNames>
+      <RefColPositions>1</RefColPositions>
+      <StateNumber>4879</StateNumber>
+      <RefTableId>41889</RefTableId>
+      <RefTableName>authors</RefTableName>
+      <RefTableKind>table</RefTableKind>
+    </foreign-key>
+    <index id="298" parent="282" name="news_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>41898</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4879</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="299" parent="282" name="news_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>41899</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4879</StateNumber>
+      <UnderlyingIndexId>41898</UnderlyingIndexId>
+    </key>
+    <column id="300" parent="283" name="news_id">
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>4887</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="301" parent="283" name="tag_id">
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>4887</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <foreign-key id="302" parent="283" name="news_tags_news_id_fkey">
+      <ColNames>news_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>41931</ObjectId>
+      <RefColNames>id</RefColNames>
+      <RefColPositions>1</RefColPositions>
+      <StateNumber>4887</StateNumber>
+      <RefTableId>41895</RefTableId>
+      <RefTableName>news</RefTableName>
+      <RefTableKind>table</RefTableKind>
+    </foreign-key>
+    <foreign-key id="303" parent="283" name="news_tags_tag_id_fkey">
+      <ColNames>tag_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>41936</ObjectId>
+      <RefColNames>id</RefColNames>
+      <RefColPositions>1</RefColPositions>
+      <StateNumber>4887</StateNumber>
+      <RefTableId>41906</RefTableId>
+      <RefTableName>tags</RefTableName>
+      <RefTableKind>table</RefTableKind>
+    </foreign-key>
+    <index id="304" parent="283" name="news_tags_pkey">
+      <ColNames>news_id
+tag_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>41929</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4887</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="305" parent="283" name="news_tags_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>41930</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4887</StateNumber>
+      <UnderlyingIndexId>41929</UnderlyingIndexId>
+    </key>
+    <column id="306" parent="284" name="id">
+      <DataType>bigint|0s</DataType>
+      <IdentityKind>always</IdentityKind>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>4881</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="307" parent="284" name="name">
+      <DataType>varchar(15)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>4881</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="308" parent="284" name="tags_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>41909</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4881</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="309" parent="284" name="tags_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>41910</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>4881</StateNumber>
+      <UnderlyingIndexId>41909</UnderlyingIndexId>
+    </key>
   </database-model>
 </dataSource>

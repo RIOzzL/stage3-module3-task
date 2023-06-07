@@ -8,6 +8,7 @@ import com.mjc.school.service.exception.ValidatorException;
 import com.mjc.school.service.mapper.NewsMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
@@ -30,6 +31,7 @@ public class NewsService implements BaseService<NewsDto, NewsDto, Long> {
 
 
     @Override
+    @Transactional(readOnly = true)
     public List<NewsDto> readAll() {
         List<News> allNews = newsRepository.readAll();
         return allNews.stream().map(newsMapper::toDto)
@@ -37,6 +39,7 @@ public class NewsService implements BaseService<NewsDto, NewsDto, Long> {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public NewsDto readById(Long id) {
         Optional<News> news = newsRepository.readById(id);
         if (news.isPresent()) {
@@ -47,23 +50,27 @@ public class NewsService implements BaseService<NewsDto, NewsDto, Long> {
     }
 
     @Override
+    @Transactional
     public NewsDto create(NewsDto createRequest) {
         News news = newsRepository.create(newsMapper.toEntity(createRequest));
         return newsMapper.toDto(news);
     }
 
     @Override
+    @Transactional
     public NewsDto update(NewsDto updateRequest) {
         News update = newsRepository.update(newsMapper.toEntity(updateRequest));
         return newsMapper.toDto(update);
     }
 
     @Override
+    @Transactional
     public boolean deleteById(Long id) {
         return newsRepository.deleteById(id);
     }
 
 
+    @Transactional
     public boolean isEntityExist(Long id) {
         Optional<News> news = newsRepository.readById(id);
         return news.isPresent();

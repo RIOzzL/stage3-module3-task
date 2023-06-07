@@ -3,7 +3,8 @@ package com.mjc.school.repository.impl;
 import com.mjc.school.repository.BaseRepository;
 import com.mjc.school.repository.aop.annotation.OnDelete;
 import com.mjc.school.repository.model.entity.Author;
-import com.mjc.school.repository.util.DataSource;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -15,55 +16,53 @@ import java.util.Optional;
 @Repository
 public class AuthorRepository implements BaseRepository<Author, Long> {
 
-    private final DataSource dataSource;
+    private static final String READ_ALL = "SELECT a FROM Author a";
 
-    @Autowired
-    public AuthorRepository(DataSource dataSource) {
-        this.dataSource = dataSource;
-    }
+    @PersistenceContext
+    private EntityManager entityManager;
+
 
     @Override
     public List<Author> readAll() {
-        return dataSource.getAuthorList();
+        return entityManager.createQuery(READ_ALL, Author.class).getResultList();
     }
 
     @Override
     public Optional<Author> readById(Long id) {
-        return dataSource.getAuthorList().stream()
-                .filter(author -> author.getId().equals(id))
-                .findFirst();
+        return Optional.ofNullable(entityManager.find(Author.class, id));
     }
 
     @Override
     public Author create(Author entity) {
-        entity.setId(dataSource.increaseAuthorId());
         entity.setCreateDate(LocalDateTime.now().truncatedTo(ChronoUnit.SECONDS));
         entity.setLastUpdateDate(LocalDateTime.now().truncatedTo(ChronoUnit.SECONDS));
-        dataSource.getAuthorList().add(entity);
+        entityManager.persist(entity);
         return entity;
     }
 
     @Override
-    public Author update(Author entity) {
-        Author author = this.readById(entity.getId()).get();
-        author.setName(entity.getName());
-        author.setLastUpdateDate(LocalDateTime.now().truncatedTo(ChronoUnit.SECONDS));
-        return author;
+    public Author update(Author updatedAuthor) {
+        if (existById(updatedAuthor.getId())) {
+            Author author = this.readById(updatedAuthor.getId()).get();
+            author.setName(updatedAuthor.getName());
+            author.setLastUpdateDate(LocalDateTime.now().truncatedTo(ChronoUnit.SECONDS));
+            entityManager.merge(author);
+            return author;
+        } else {
+            return null;
+        }
     }
 
 
     @OnDelete
     @Override
     public boolean deleteById(Long id) {
-        Optional<Author> authorToDelete = dataSource.getAuthorList().stream()
-                .filter(author -> author.getId().equals(id))
-                .findFirst();
-        if (authorToDelete.isPresent()) {
-            dataSource.getAuthorList().remove(authorToDelete.get());
+        if (existById(id)) {
+            Author author = readById(id).get();
+            entityManager.remove(author);
             return true;
-        } else {
-            return false;
         }
+        return false;
     }
 
     @Override

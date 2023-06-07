@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20a4d6c1-45d3-4acd-98b9-cdbaa4952cbf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-main/src/main/java/com/mjc/school/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-main/src/main/java/com/mjc/school/config/AppConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +55,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -73,36 +78,39 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable": "SELECTIVE",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/USER/IdeaProjects/stage3-module3-task",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.26206896",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "spring.configuration.checksum": "298d0e622d6dd6584d28048d8d5640e8"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable&quot;: &quot;SELECTIVE&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/USER/IdeaProjects/stage3-module3-task&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.26206896&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;298d0e622d6dd6584d28048d8d5640e8&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\USER\IdeaProjects\stage3-module3-task" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.mjc.school.main.Main">
-    <configuration name="com.mjc.school.main.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.mjc.school.main.Main" />
+      <module name="stage3-module3-task.module-main.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.mjc.school.main.*" />
@@ -175,15 +183,15 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.com.mjc.school.main.Main" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="Gradle.stage3-module3-task" />
       <item itemvalue="Gradle.stage3-module3-task:module-main [clean]" />
       <item itemvalue="Gradle.stage3-module3-task [clean]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.mjc.school.main.Main" />
         <item itemvalue="Gradle.stage3-module3-task [clean]" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.stage3-module3-task:module-main [clean]" />
       </list>
     </recent_temporary>
@@ -201,7 +209,13 @@
       <workItem from="1686147059224" duration="1420000" />
       <workItem from="1686148531798" duration="300000" />
       <workItem from="1686148848385" duration="1144000" />
-      <workItem from="1686155320641" duration="299000" />
+      <workItem from="1686155320641" duration="4372000" />
+      <workItem from="1686229196841" duration="1998000" />
+      <workItem from="1686297638079" duration="9505000" />
+      <workItem from="1686477767137" duration="2581000" />
+      <workItem from="1686571930966" duration="7133000" />
+      <workItem from="1686636950747" duration="21411000" />
+      <workItem from="1686680992530" duration="596000" />
     </task>
     <servers />
   </component>
@@ -218,6 +232,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/6.0.0/6edf09d8b543dfbb15e7af821adbbbe4d9ac84f0/spring-orm-6.0.0-sources.jar!/org/springframework/orm/jpa/support/PersistenceAnnotationBeanPostProcessor.java</url>
+          <line>712</line>
+          <properties class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.PersistenceElement" method="resolveEntityManager">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

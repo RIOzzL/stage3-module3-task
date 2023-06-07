@@ -21,6 +21,9 @@ subprojects {
     dependencies {
         implementation "org.springframework:spring-context:$springVersion"
 
+        implementation "org.springframework.boot:spring-boot-starter-data-jpa:$springBootStarterDataJpaVersion"
+        implementation 'org.postgresql:postgresql:42.6.0'
+
         implementation group: 'org.springframework', name: 'spring-aop', version: '5.3.18'
         implementation group: 'org.aspectj', name: 'aspectjweaver',
                 version: '1.9.19'
@@ -29,8 +32,8 @@ subprojects {
         testImplementation "org.junit.jupiter:junit-jupiter-api:$jupiterVersion"
         testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$jupiterVersion"
         testImplementation "com.tngtech.archunit:archunit:$archUnitVersion"
-        compileOnly 'org.projectlombok:lombok:1.18.26'
-        annotationProcessor 'org.projectlombok:lombok:1.18.26'
+        compileOnly "org.projectlombok:lombok:$lombokVersion"
+        annotationProcessor "org.projectlombok:lombok:$lombokAnnotationVersion"
         implementation "org.mapstruct:mapstruct:1.4.2.Final"
 
     }

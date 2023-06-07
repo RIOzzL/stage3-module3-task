@@ -8,6 +8,7 @@ import com.mjc.school.service.exception.ValidatorException;
 import com.mjc.school.service.mapper.AuthorMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
@@ -31,6 +32,7 @@ public class AuthorService implements BaseService<AuthorDto, AuthorDto, Long> {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public List<AuthorDto> readAll() {
         List<Author> authors = authorRepository.readAll();
         return authors.stream()
@@ -39,6 +41,7 @@ public class AuthorService implements BaseService<AuthorDto, AuthorDto, Long> {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public AuthorDto readById(Long id) {
         Optional<Author> author = authorRepository.readById(id);
         if (author.isPresent()) {
@@ -49,12 +52,14 @@ public class AuthorService implements BaseService<AuthorDto, AuthorDto, Long> {
     }
 
     @Override
+    @Transactional
     public AuthorDto create(AuthorDto createRequest) {
         Author author = mapper.toEntity(createRequest);
         return mapper.toDto(authorRepository.create(author));
     }
 
     @Override
+    @Transactional
     public AuthorDto update(AuthorDto updateRequest) {
         Author updatedAuthor = mapper.toEntity(updateRequest);
         Author authorToBeUpdate = authorRepository.readById(updatedAuthor.getId()).get();
@@ -64,10 +69,12 @@ public class AuthorService implements BaseService<AuthorDto, AuthorDto, Long> {
     }
 
     @Override
+    @Transactional
     public boolean deleteById(Long id) {
         return authorRepository.deleteById(id);
     }
 
+    @Transactional
     public boolean existById(Long id) {
         return authorRepository.existById(id);
     }

@@ -2,8 +2,9 @@ package com.mjc.school.repository.impl;
 
 import com.mjc.school.repository.BaseRepository;
 import com.mjc.school.repository.model.entity.News;
-import com.mjc.school.repository.util.DataSource;
-import org.springframework.beans.factory.annotation.Autowired;
+
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
 
 import java.time.LocalDateTime;
@@ -13,53 +14,50 @@ import java.util.Optional;
 
 @Repository
 public class NewsRepository implements BaseRepository<News, Long> {
-    private final DataSource dataSource;
 
-    @Autowired
-    public NewsRepository(DataSource dataSource) {
-        this.dataSource = dataSource;
-    }
+    private static final String READ_ALL = "SELECT n FROM News n";
+
+    @PersistenceContext
+    private EntityManager entityManager;
 
     @Override
     public List<News> readAll() {
-        return dataSource.getNewsList();
+        return entityManager.createQuery(READ_ALL, News.class).getResultList();
     }
 
     @Override
     public Optional<News> readById(Long id) {
-        return dataSource.getNewsList().stream()
-                .filter(news -> news.getId().equals(id))
-                .findFirst();
+        return Optional.ofNullable(entityManager.find(News.class, id));
     }
 
     @Override
     public News create(News entity) {
-        entity.setId(dataSource.increaseNewsId());
-        dataSource.getNewsList().add(entity);
+        entityManager.persist(entity);
         return entity;
     }
 
     @Override
     public News update(News entity) {
-        News newsToUpdate = this.readById(entity.getId()).get();
-        newsToUpdate.setTitle(entity.getTitle());
-        newsToUpdate.setContent(entity.getContent());
-        newsToUpdate.setAuthorId(entity.getAuthorId());
-        newsToUpdate.setLastUpdateDate(LocalDateTime.now().truncatedTo(ChronoUnit.SECONDS));
-        return newsToUpdate;
+        if (existById(entity.getId())) {
+            News newsToUpdate = this.readById(entity.getId()).get();
+            newsToUpdate.setTitle(entity.getTitle());
+            newsToUpdate.setContent(entity.getContent());
+            newsToUpdate.setAuthor(entity.getAuthor());
+            newsToUpdate.setLastUpdateDate(LocalDateTime.now().truncatedTo(ChronoUnit.SECONDS));
+            entityManager.persist(newsToUpdate);
+            return newsToUpdate;
+        }
+        return null;
     }
 
     @Override
     public boolean deleteById(Long id) {
-        Optional<News> newsToDelete = dataSource.getNewsList().stream()
-                .filter(news -> news.getId().equals(id))
-                .findFirst();
-        if (newsToDelete.isPresent()) {
-            dataSource.getNewsList().remove(newsToDelete.get());
+        if (existById(id)) {
+            News news = readById(id).get();
+            entityManager.remove(news);
             return true;
-        } else {
-            return false;
         }
+        return false;
     }
 
     @Override

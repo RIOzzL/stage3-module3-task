@@ -22,7 +22,7 @@ public class OnDeleteAuthorAspect {
 
     @After(value = "hasOnDeleteAnnotation() && args(id)")
     public void onDeleteAnnotationProcessor(JoinPoint joinPoint, Long id) {
-        newsRepository.readAll().stream().filter(news -> news.getAuthorId().equals(id))
-                .forEach(news -> news.setAuthorId(null));
+//        newsRepository.readAll().stream().filter(news -> news.getAuthorId().equals(id))
+//                .forEach(news -> news.setAuthorId(null));
     }
 }
