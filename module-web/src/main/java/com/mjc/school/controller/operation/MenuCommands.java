@@ -11,7 +11,7 @@ import java.util.List;
 @Component
 public class MenuCommands {
 
-    private List<Command> commands;
+    private final List<Command> commands;
 
     @Autowired
     public MenuCommands(List<Command> commands) {

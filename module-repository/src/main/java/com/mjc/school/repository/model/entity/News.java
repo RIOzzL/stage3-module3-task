@@ -3,6 +3,9 @@ package com.mjc.school.repository.model.entity;
 import com.mjc.school.repository.model.BaseEntity;
 import jakarta.persistence.*;
 import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -14,6 +17,7 @@ import java.util.List;
 @Builder
 @Entity
 @Table(name = "news")
+@EntityListeners(AuditingEntityListener.class)
 public class News implements BaseEntity<Long> {
 
     @Id
@@ -27,9 +31,11 @@ public class News implements BaseEntity<Long> {
     @Column(name = "content")
     private String content;
 
+    @CreatedDate
     @Column(name = "create_date")
     private LocalDateTime createDate;
 
+    @LastModifiedDate
     @Column(name = "last_update_date")
     private LocalDateTime lastUpdateDate;
 

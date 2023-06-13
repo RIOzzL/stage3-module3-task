@@ -2,13 +2,10 @@ package com.mjc.school.repository.impl;
 
 import com.mjc.school.repository.BaseRepository;
 import com.mjc.school.repository.model.entity.News;
-
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
 
-import java.time.LocalDateTime;
-import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.Optional;
 
@@ -43,7 +40,6 @@ public class NewsRepository implements BaseRepository<News, Long> {
             newsToUpdate.setTitle(entity.getTitle());
             newsToUpdate.setContent(entity.getContent());
             newsToUpdate.setAuthor(entity.getAuthor());
-            newsToUpdate.setLastUpdateDate(LocalDateTime.now().truncatedTo(ChronoUnit.SECONDS));
             entityManager.persist(newsToUpdate);
             return newsToUpdate;
         }

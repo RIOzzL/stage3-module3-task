@@ -42,7 +42,6 @@ public class NewsOperationsExecutor {
         System.out.println(Constants.OPERATION + Operations.CREATE_NEWS.getOperationDescription());
         System.out.println(Constants.ENTER_NEWS_TITLE);
         NewsDto newsRequestDto = new NewsDto();
-        //NewsDto newsDto = new NewsDto();
         try {
             String title = scanner.nextLine();
             newsRequestDto.setTitle(title);
@@ -56,27 +55,11 @@ public class NewsOperationsExecutor {
         } catch (Exception exception) {
             System.out.println(exception.getMessage());
         }
-
-//        NewsDto newsDto = new NewsDto();
-//        try {
-//            String title = scanner.nextLine();
-//            newsDto.setTitle(title);
-//            System.out.println(ENTER_NEWS_CONTENT);
-//            String content = scanner.nextLine();
-//            newsDto.setContent(content);
-//            System.out.println(ENTER_AUTHOR_ID);
-//            long authorId = validateNumberInput(scanner, AUTHOR_ID);
-//            newsDto.setAuthorId(authorId);
-//            System.out.println(newsController.create(newsDto));
-//        } catch (ValidatorException exception) {
-//            System.out.println(exception.getMessage());
-//        }
     }
 
     public void updateNews() {
         System.out.println(Constants.OPERATION + Operations.UPDATE_NEWS.getOperationDescription());
         System.out.println(Constants.ENTER_NEWS_ID);
-        //NewsDto newsDto = new NewsDto();
         NewsDto newsDto = new NewsDto();
         try {
             newsDto.setId(validateNumberInput(scanner, Constants.NEWS_ID));

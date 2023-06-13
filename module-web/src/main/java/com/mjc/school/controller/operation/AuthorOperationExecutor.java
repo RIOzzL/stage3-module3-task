@@ -42,7 +42,6 @@ public class AuthorOperationExecutor {
     public void createAuthor() {
         System.out.println(Constants.OPERATION + CREATE_AUTHOR.getOperationDescription());
         System.out.println(Constants.ENTER_AUTHOR_NAME);
-      //  AuthorDto authorDto = new AuthorDto();
         AuthorDto authorDto = new AuthorDto();
         try {
             authorDto.setName(scanner.next());
@@ -55,7 +54,6 @@ public class AuthorOperationExecutor {
     public void updateAuthor() {
         System.out.println(Constants.OPERATION + UPDATE_AUTHOR.getOperationDescription());
         System.out.println(Constants.ENTER_AUTHOR_NAME);
-     //   AuthorDto authorDto = new AuthorDto();
         AuthorDto authorRequestDto = new AuthorDto();
         try {
             scanner.nextLine();

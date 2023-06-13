@@ -5,11 +5,8 @@ import com.mjc.school.repository.aop.annotation.OnDelete;
 import com.mjc.school.repository.model.entity.Author;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import java.time.LocalDateTime;
-import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.Optional;
 
@@ -34,8 +31,6 @@ public class AuthorRepository implements BaseRepository<Author, Long> {
 
     @Override
     public Author create(Author entity) {
-        entity.setCreateDate(LocalDateTime.now().truncatedTo(ChronoUnit.SECONDS));
-        entity.setLastUpdateDate(LocalDateTime.now().truncatedTo(ChronoUnit.SECONDS));
         entityManager.persist(entity);
         return entity;
     }
@@ -45,7 +40,6 @@ public class AuthorRepository implements BaseRepository<Author, Long> {
         if (existById(updatedAuthor.getId())) {
             Author author = this.readById(updatedAuthor.getId()).get();
             author.setName(updatedAuthor.getName());
-            author.setLastUpdateDate(LocalDateTime.now().truncatedTo(ChronoUnit.SECONDS));
             entityManager.merge(author);
             return author;
         } else {

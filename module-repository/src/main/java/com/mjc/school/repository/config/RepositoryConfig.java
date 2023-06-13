@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
@@ -23,6 +24,7 @@ import java.util.Properties;
 @EnableTransactionManagement
 @EnableJpaRepositories("com.mjc.school.repository.impl")
 @PropertySource("classpath:application.properties")
+@EnableJpaAuditing
 public class RepositoryConfig {
 
     private static final String DATABASE_DRIVER = "spring.datasource.driver-class-name";
@@ -51,7 +53,6 @@ public class RepositoryConfig {
     @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
-        //    vendorAdapter.setGenerateDdl(true);
 
         LocalContainerEntityManagerFactoryBean entityManagerFactory = new LocalContainerEntityManagerFactoryBean();
         entityManagerFactory.setJpaVendorAdapter(vendorAdapter);
@@ -74,16 +75,7 @@ public class RepositoryConfig {
         hibernateProperties.setProperty(HIBERNATE_HBM2DDL, environment.getProperty("spring.jpa.properties.hibernate.hbm2ddl.auto"));
         hibernateProperties.setProperty(HIBERNATE_DIALECT, environment.getProperty("spring.jpa.properties.hibernate.dialect"));
         hibernateProperties.setProperty(HIBERNATE_SHOWSQL, environment.getProperty("spring.jpa.show-sql"));
-        // hibernateProperties.setProperty("hibernate.sql.init.mode", environment.getProperty("spring.sql.init.mode"));
-        // hibernateProperties.setProperty("hibernate.hbm2ddl.import_files", environment.getProperty("spring.sql.init.data-locations"));
-        // hibernateProperties.setProperty("hibernate.auto_quote_keyword", environment.getProperty("spring.jpa.properties.hibernate.auto_quote_keyword"));
-
         return hibernateProperties;
     }
-
-//    @Bean
-//    public TransactionTemplate tx(PlatformTransactionManager transactionManager) {
-//        return new TransactionTemplate(transactionManager);
-//    }
 
 }
