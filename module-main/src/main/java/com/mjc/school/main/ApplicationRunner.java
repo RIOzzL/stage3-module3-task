@@ -21,9 +21,9 @@ public class ApplicationRunner {
         while (start) {
             handlerProcessor.invokeCommand(0);
             Integer userInput = Integer.parseInt(scanner.next());
-            if (userInput < 1 || userInput > 11) {
+            if (userInput < 1 || userInput > 19) {
                 System.out.println(userInput + " not found! Please make correct choice!");
-            } else if (userInput == 11) {
+            } else if (userInput == 19) {
                 start = false;
             } else {
                 handlerProcessor.invokeCommand(userInput);

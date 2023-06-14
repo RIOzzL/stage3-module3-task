@@ -1,6 +1,6 @@
 package com.mjc.school.controller.operation.commandImpl;
 
-import com.mjc.school.controller.operation.AuthorOperationExecutor;
+import com.mjc.school.controller.operation.operationImpl.AuthorOperationExecutor;
 import com.mjc.school.controller.operation.Command;
 import org.springframework.stereotype.Component;
 

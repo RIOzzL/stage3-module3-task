@@ -1,6 +1,7 @@
 package com.mjc.school.repository.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -25,6 +26,7 @@ import java.util.Properties;
 @EnableJpaRepositories("com.mjc.school.repository.impl")
 @PropertySource("classpath:application.properties")
 @EnableJpaAuditing
+//@EnableAutoConfiguration
 public class RepositoryConfig {
 
     private static final String DATABASE_DRIVER = "spring.datasource.driver-class-name";

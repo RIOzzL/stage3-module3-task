@@ -72,7 +72,6 @@ public class NewsService implements BaseService<NewsDto, NewsDto, Long> {
 
     @Transactional
     public boolean isEntityExist(Long id) {
-        Optional<News> news = newsRepository.readById(id);
-        return news.isPresent();
+        return newsRepository.existById(id);
     }
 }

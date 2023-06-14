@@ -1,4 +1,4 @@
-package com.mjc.school.controller.operation;
+package com.mjc.school.controller.operation.operationImpl;
 
 import com.mjc.school.controller.impl.NewsController;
 import com.mjc.school.controller.utils.Constants;
