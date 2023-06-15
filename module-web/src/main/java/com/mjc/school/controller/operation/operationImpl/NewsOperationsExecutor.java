@@ -4,23 +4,18 @@ import com.mjc.school.controller.impl.NewsController;
 import com.mjc.school.controller.utils.Constants;
 import com.mjc.school.controller.utils.Operations;
 import com.mjc.school.service.dto.NewsDto;
-import com.mjc.school.service.exception.InputErrorMessage;
 import com.mjc.school.service.exception.InputValidatorException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.Scanner;
-
 @Component
-public class NewsOperationsExecutor {
+public class NewsOperationsExecutor extends OperationExecutor {
 
     private final NewsController newsController;
-    private final Scanner scanner;
 
     @Autowired
     public NewsOperationsExecutor(NewsController newsController) {
         this.newsController = newsController;
-        this.scanner = new Scanner(System.in);
     }
 
     public void printAllNews() {
@@ -31,7 +26,7 @@ public class NewsOperationsExecutor {
         System.out.println(Constants.OPERATION + Operations.GET_NEWS_BY_ID.getOperationDescription());
         System.out.println(Constants.ENTER_NEWS_ID);
         try {
-            long id = validateNumberInput(scanner, Constants.NEWS_ID);
+            long id = validateNumberInput(Constants.NEWS_ID);
             System.out.println(newsController.readById(id));
         } catch (InputValidatorException exception) {
             System.out.println(exception.getMessage());
@@ -49,7 +44,7 @@ public class NewsOperationsExecutor {
             String content = scanner.nextLine();
             newsRequestDto.setContent(content);
             System.out.println(Constants.ENTER_AUTHOR_ID);
-            long authorId = validateNumberInput(scanner, Constants.AUTHOR_ID);
+            long authorId = validateNumberInput(Constants.AUTHOR_ID);
             newsRequestDto.setAuthorId(authorId);
             System.out.println(newsController.create(newsRequestDto));
         } catch (Exception exception) {
@@ -62,14 +57,14 @@ public class NewsOperationsExecutor {
         System.out.println(Constants.ENTER_NEWS_ID);
         NewsDto newsDto = new NewsDto();
         try {
-            newsDto.setId(validateNumberInput(scanner, Constants.NEWS_ID));
+            newsDto.setId(validateNumberInput(Constants.NEWS_ID));
             System.out.println(Constants.ENTER_NEWS_TITLE);
             scanner.nextLine();
             newsDto.setTitle(scanner.nextLine());
             System.out.println(Constants.ENTER_NEWS_CONTENT);
             newsDto.setContent(scanner.nextLine());
             System.out.println(Constants.ENTER_AUTHOR_ID);
-            newsDto.setAuthorId(validateNumberInput(scanner, Constants.AUTHOR_ID));
+            newsDto.setAuthorId(validateNumberInput(Constants.AUTHOR_ID));
             System.out.println(newsController.update(newsDto));
         } catch (Exception exception) {
             System.out.println(exception.getMessage());
@@ -80,20 +75,10 @@ public class NewsOperationsExecutor {
         System.out.println(Constants.OPERATION + Operations.REMOVE_NEWS_BY_ID.getOperationDescription());
         System.out.println(Constants.ENTER_NEWS_ID);
         try {
-            long id = validateNumberInput(scanner, Constants.NEWS_ID);
+            long id = validateNumberInput(Constants.NEWS_ID);
             System.out.println(newsController.deleteById(id));
         } catch (Exception exception) {
             System.out.println(exception.getMessage());
         }
-    }
-
-    public Long validateNumberInput(Scanner scanner, String param) {
-        long nextLong;
-        try {
-            nextLong = scanner.nextLong();
-        } catch (RuntimeException exception) {
-            throw new InputValidatorException(String.format(InputErrorMessage.VALIDATE_INT_VALUE.getMessage(), param));
-        }
-        return nextLong;
     }
 }

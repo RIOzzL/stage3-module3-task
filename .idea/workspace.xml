@@ -5,24 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20a4d6c1-45d3-4acd-98b9-cdbaa4952cbf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/impl/AuthorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/impl/AuthorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/impl/NewsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/impl/NewsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/model/entity/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/model/entity/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/model/entity/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/model/entity/News.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/model/entity/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/model/entity/Tag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/aop/AuthorControllerValidationAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/aop/AuthorControllerValidationAspect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/aop/NewsControllerValidationAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/aop/NewsControllerValidationAspect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-service/build/libs/module-service.jar" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/build/libs/module-service.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-service/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-web/build/libs/module-web.jar" beforeDir="false" afterPath="$PROJECT_DIR$/module-web/build/libs/module-web.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +225,7 @@
       <workItem from="1686636950747" duration="21411000" />
       <workItem from="1686680992530" duration="3488000" />
       <workItem from="1686732120799" duration="17827000" />
-      <workItem from="1686816483831" duration="7196000" />
+      <workItem from="1686816483831" duration="8526000" />
     </task>
     <servers />
   </component>
