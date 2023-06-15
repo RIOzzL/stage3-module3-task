@@ -131,5 +131,12 @@ public class MenuCommands {
                 .execute();
     }
 
+    @CommandHandler(16)
+    public void getAuthorByNewsId() {
+        commands.stream().filter(command -> command instanceof GetAuthorByNewsIdOperation)
+                .findFirst().get()
+                .execute();
+    }
+
 
 }

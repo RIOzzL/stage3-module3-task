@@ -1,7 +1,7 @@
 package com.mjc.school.service.aop;
 
-import com.mjc.school.service.dto.NewsDto;
 import com.mjc.school.service.aop.validator.NewsDtoValidator;
+import com.mjc.school.service.dto.NewsDto;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -43,7 +43,8 @@ public class NewsControllerValidationAspect {
         newsDtoValidator.createValidation((NewsDto) args[0]);
     }
 
-    @Pointcut("isNewsService() && @args(com.mjc.school.service.aop.validator.restriction.IsEntityExist,..)")
+    @Pointcut("isNewsService() &&" +
+            " execution(public * com.mjc.school.service.impl.*.*(..,@com.mjc.school.service.aop.validator.restriction.IsEntityExist (*),..))")
     public void hasIsEntityExistAnnotation() {
 
     }

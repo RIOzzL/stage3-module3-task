@@ -1,6 +1,7 @@
 package com.mjc.school.repository.impl;
 
 import com.mjc.school.repository.BaseRepository;
+import com.mjc.school.repository.model.entity.Author;
 import com.mjc.school.repository.model.entity.News;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
@@ -60,5 +61,10 @@ public class NewsRepository implements BaseRepository<News, Long> {
     @Override
     public boolean existById(Long id) {
         return this.readById(id).isPresent();
+    }
+
+    public Author getAuthorByNewsId(long id) {
+        News news = readById(id).get();
+        return news.getAuthor();
     }
 }

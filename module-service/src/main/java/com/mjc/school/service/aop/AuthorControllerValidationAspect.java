@@ -43,7 +43,8 @@ public class AuthorControllerValidationAspect {
         authorDtoValidator.createValidation((AuthorDto) args[0]);
     }
 
-    @Pointcut("isAuthorService() && @args(com.mjc.school.service.aop.validator.restriction.IsEntityExist,..)")
+    @Pointcut("isAuthorService() &&" +
+            " execution(public * com.mjc.school.service.impl.*.*(..,@com.mjc.school.service.aop.validator.restriction.IsEntityExist (*),..))")
     public void hasIsEntityExistAnnotation() {
 
     }

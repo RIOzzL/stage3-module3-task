@@ -27,7 +27,7 @@ public class TagOperationExecutor extends OperationExecutor {
         try {
             long id = validateNumberInput(Constants.NEWS_ID);
             System.out.println(tagController.readById(id));
-        } catch (InputValidatorException exception) {
+        } catch (Exception exception) {
             System.out.println(exception.getMessage());
         }
     }

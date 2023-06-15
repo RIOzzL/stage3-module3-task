@@ -47,11 +47,11 @@ public class AuthorService implements BaseService<AuthorDto, AuthorDto, Long> {
     @Transactional(readOnly = true)
     public AuthorDto readById(@IsEntityExist Long id) {
         Optional<Author> author = authorRepository.readById(id);
-        if (author.isPresent()) {
-            return mapper.toDto(author.get());
-        } else {
-            throw new ValidatorException(String.format(AUTHOR_ID_DOES_NOT_EXIST.getMessage(), id));
-        }
+//        if (author.isPresent()) {
+        return mapper.toDto(author.get());
+//        } else {
+//            throw new ValidatorException(String.format(AUTHOR_ID_DOES_NOT_EXIST.getMessage(), id));
+//        }
     }
 
     @Override

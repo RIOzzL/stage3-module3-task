@@ -28,7 +28,7 @@ public class NewsOperationsExecutor extends OperationExecutor {
         try {
             long id = validateNumberInput(Constants.NEWS_ID);
             System.out.println(newsController.readById(id));
-        } catch (InputValidatorException exception) {
+        } catch (Exception exception) {
             System.out.println(exception.getMessage());
         }
     }
@@ -77,6 +77,17 @@ public class NewsOperationsExecutor extends OperationExecutor {
         try {
             long id = validateNumberInput(Constants.NEWS_ID);
             System.out.println(newsController.deleteById(id));
+        } catch (Exception exception) {
+            System.out.println(exception.getMessage());
+        }
+    }
+
+    public void getAuthorByNewsId() {
+        System.out.println(Constants.OPERATION + Operations.GET_AUTHOR_BY_NEWS_ID.getOperationDescription());
+        System.out.println(Constants.ENTER_NEWS_ID);
+        try {
+            long id = validateNumberInput(Constants.NEWS_ID);
+            System.out.println(newsController.getAuthorByNewsId(id));
         } catch (Exception exception) {
             System.out.println(exception.getMessage());
         }
