@@ -1,7 +1,7 @@
 package com.mjc.school.service.aop;
 
-import com.mjc.school.service.dto.AuthorDto;
-import com.mjc.school.service.aop.validator.AuthorDtoValidator;
+import com.mjc.school.service.aop.validator.NewsDtoValidator;
+import com.mjc.school.service.dto.NewsDto;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -11,17 +11,17 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Aspect
-public class AuthorControllerValidationAspect {
+public class NewsValidationAspect {
 
     @Autowired
-    private AuthorDtoValidator authorDtoValidator;
+    private NewsDtoValidator newsDtoValidator;
 
-    @Pointcut("within(com.mjc.school.service.impl.AuthorService)")
-    public void isAuthorService() {
+    @Pointcut("within(com.mjc.school.service.impl.NewsService)")
+    public void isNewsService() {
 
     }
 
-    @Pointcut("isAuthorService() && @annotation(com.mjc.school.service.aop.validator.restriction.UpdateValid)")
+    @Pointcut("isNewsService() && @annotation(com.mjc.school.service.aop.validator.restriction.UpdateValid)")
     public void hasUpdateValidAnnotation() {
 
     }
@@ -29,10 +29,10 @@ public class AuthorControllerValidationAspect {
     @Before("hasUpdateValidAnnotation()")
     public void updateValidProcessor(JoinPoint joinPoint) {
         Object[] args = joinPoint.getArgs();
-        authorDtoValidator.updateValidation((AuthorDto) args[0]);
+        newsDtoValidator.updateValidation((NewsDto) args[0]);
     }
 
-    @Pointcut("isAuthorService() && @annotation(com.mjc.school.service.aop.validator.restriction.CreateValid)")
+    @Pointcut("isNewsService() && @annotation(com.mjc.school.service.aop.validator.restriction.CreateValid)")
     public void hasCreateValidAnnotation() {
 
     }
@@ -40,10 +40,10 @@ public class AuthorControllerValidationAspect {
     @Before("hasCreateValidAnnotation()")
     public void createValidProcessor(JoinPoint joinPoint) {
         Object[] args = joinPoint.getArgs();
-        authorDtoValidator.createValidation((AuthorDto) args[0]);
+        newsDtoValidator.createValidation((NewsDto) args[0]);
     }
 
-    @Pointcut("isAuthorService() &&" +
+    @Pointcut("isNewsService() &&" +
             " execution(public * com.mjc.school.service.impl.*.*(..,@com.mjc.school.service.aop.validator.restriction.IsEntityExist (*),..))")
     public void hasIsEntityExistAnnotation() {
 
@@ -51,6 +51,6 @@ public class AuthorControllerValidationAspect {
 
     @Before("hasIsEntityExistAnnotation() && args(id)")
     public void IsEntityExistAnnotationProcessor(JoinPoint joinPoint, Long id) {
-        authorDtoValidator.isExistValidation(id);
+        newsDtoValidator.isExistValidation(id);
     }
 }

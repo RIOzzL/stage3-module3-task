@@ -14,6 +14,8 @@ public class Constants {
     public static final String ENTER_TAG_NAME = "Enter tag name:";
     public static final String ENTER_TAG_ID = "Enter tag id:";
     public static final String TAG_ID = "Tag Id";
+    public static final String ENTER_TAGS_ID = "Enter the tag id separated by spaces: ";
+    public static final String TAGS_ID = "Tags Id";
 
     private Constants() {
     }

@@ -138,5 +138,10 @@ public class MenuCommands {
                 .execute();
     }
 
-
+    @CommandHandler(17)
+    public void getTagsByNewsId() {
+        commands.stream().filter(command -> command instanceof GetTagsByNewsIdOperation)
+                .findFirst().get()
+                .execute();
+    }
 }

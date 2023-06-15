@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20a4d6c1-45d3-4acd-98b9-cdbaa4952cbf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/aop/TagValidationAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/aop/validator/TagValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module-web/src/main/java/com/mjc/school/controller/operation/commandImpl/GetTagsByNewsIdOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.bin" afterDir="false" />
@@ -14,30 +17,42 @@
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module-main/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/module-main/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/aop/OnDeleteAuthorAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/aop/OnDeleteAuthorAspect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/impl/AuthorRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/impl/AuthorRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/impl/NewsRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/impl/NewsRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module-repository/build/libs/module-repository.jar" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/libs/module-repository.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module-repository/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/aop/OnDeleteAuthorAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/aop/OnDeleteAuthorAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/impl/AuthorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/impl/AuthorRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/impl/NewsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/impl/NewsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/impl/TagRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/impl/TagRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/aop/AuthorControllerValidationAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/aop/AuthorControllerValidationAspect.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/aop/NewsControllerValidationAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/aop/NewsControllerValidationAspect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/impl/AuthorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/impl/AuthorService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/aop/validator/AuthorDtoValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/aop/validator/AuthorDtoValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/aop/validator/NewsDtoValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/aop/validator/NewsDtoValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/aop/validator/Validator.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/aop/validator/Validator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/impl/NewsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/impl/NewsService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module-service/build/libs/module-service.jar" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/build/libs/module-service.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module-service/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/aop/AuthorControllerValidationAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/aop/AuthorControllerValidationAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/aop/NewsControllerValidationAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/aop/NewsControllerValidationAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/impl/AuthorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/impl/AuthorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/aop/AuthorControllerValidationAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/aop/AuthorValidationAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/aop/NewsControllerValidationAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/aop/NewsValidationAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/aop/validator/NewsDtoValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/aop/validator/NewsDtoValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/aop/validator/restriction/NotNull.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/dto/NewsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/dto/NewsDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/exception/InputErrorMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/exception/InputErrorMessage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/impl/NewsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/impl/NewsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/impl/TagService.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/impl/TagService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/impl/NewsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/impl/NewsController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/operation/MenuCommands.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/operation/MenuCommands.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/operation/operationImpl/NewsOperationsExecutor.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/operation/operationImpl/NewsOperationsExecutor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/operation/operationImpl/TagOperationExecutor.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/operation/operationImpl/TagOperationExecutor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module-web/build/libs/module-web.jar" beforeDir="false" afterPath="$PROJECT_DIR$/module-web/build/libs/module-web.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module-web/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/module-web/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module-web/src/main/java/com/mjc/school/controller/impl/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-web/src/main/java/com/mjc/school/controller/impl/NewsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module-web/src/main/java/com/mjc/school/controller/operation/MenuCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-web/src/main/java/com/mjc/school/controller/operation/MenuCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-web/src/main/java/com/mjc/school/controller/operation/commandImpl/GetAuthorByNewsIdOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-web/src/main/java/com/mjc/school/controller/operation/commandImpl/GetAuthorByNewsIdOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module-web/src/main/java/com/mjc/school/controller/operation/operationImpl/NewsOperationsExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-web/src/main/java/com/mjc/school/controller/operation/operationImpl/NewsOperationsExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-web/src/main/java/com/mjc/school/controller/operation/operationImpl/TagOperationExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-web/src/main/java/com/mjc/school/controller/operation/operationImpl/TagOperationExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/src/main/java/com/mjc/school/controller/operation/operationImpl/OperationExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-web/src/main/java/com/mjc/school/controller/operation/operationImpl/OperationExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/src/main/java/com/mjc/school/controller/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-web/src/main/java/com/mjc/school/controller/utils/Constants.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,7 +272,8 @@
       <workItem from="1686636950747" duration="21411000" />
       <workItem from="1686680992530" duration="3488000" />
       <workItem from="1686732120799" duration="17827000" />
-      <workItem from="1686816483831" duration="15895000" />
+      <workItem from="1686816483831" duration="23162000" />
+      <workItem from="1686857979973" duration="5328000" />
     </task>
     <servers />
   </component>
@@ -279,32 +295,37 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/module-web/src/main/java/com/mjc/school/controller/operation/MenuCommands.java</url>
-          <line>135</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/aop/AuthorControllerValidationAspect.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/aop/AuthorControllerValidationAspect.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/aop/AuthorControllerValidationAspect.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/aop/validator/AuthorDtoValidator.java</url>
           <line>84</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/impl/NewsRepository.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/aop/OnDeleteAuthorAspect.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/module-web/src/main/java/com/mjc/school/controller/operation/MenuCommands.java</url>
+          <line>121</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/impl/AuthorService.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/module-web/src/main/java/com/mjc/school/controller/impl/AuthorController.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

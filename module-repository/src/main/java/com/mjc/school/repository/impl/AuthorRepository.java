@@ -5,7 +5,6 @@ import com.mjc.school.repository.aop.annotation.OnDelete;
 import com.mjc.school.repository.model.entity.Author;
 import jakarta.persistence.PersistenceContext;
 import org.hibernate.Session;
-import org.hibernate.query.Query;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -46,6 +45,7 @@ public class AuthorRepository implements BaseRepository<Author, Long> {
 
     @Override
     public Author update(Author updatedAuthor) {
+        // Do not need existById
         if (existById(updatedAuthor.getId())) {
             int updatedRow = session.createQuery(UPDATE_AUTHOR, Author.class)
                     .setParameter("name", updatedAuthor.getName())
@@ -64,13 +64,10 @@ public class AuthorRepository implements BaseRepository<Author, Long> {
     @OnDelete
     @Override
     public boolean deleteById(Long id) {
-        if (existById(id)) {
-            int deletedRow = session.createQuery(DELETE_BY_ID, Author.class)
-                    .setParameter("id", id)
-                    .executeUpdate();
-            return true;
-        }
-        return false;
+        int deletedRow = session.createQuery(DELETE_BY_ID)
+                .setParameter("id", id)
+                .executeUpdate();
+        return true;
     }
 
     @Override

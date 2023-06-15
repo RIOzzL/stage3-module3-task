@@ -4,9 +4,10 @@ import com.mjc.school.controller.impl.NewsController;
 import com.mjc.school.controller.utils.Constants;
 import com.mjc.school.controller.utils.Operations;
 import com.mjc.school.service.dto.NewsDto;
-import com.mjc.school.service.exception.InputValidatorException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import java.util.Set;
 
 @Component
 public class NewsOperationsExecutor extends OperationExecutor {
@@ -46,6 +47,11 @@ public class NewsOperationsExecutor extends OperationExecutor {
             System.out.println(Constants.ENTER_AUTHOR_ID);
             long authorId = validateNumberInput(Constants.AUTHOR_ID);
             newsRequestDto.setAuthorId(authorId);
+
+            System.out.println(Constants.ENTER_TAGS_ID);
+            Set<Long> tagsId = validateNumberArrayInput(Constants.TAGS_ID);
+            newsRequestDto.setTagsId(tagsId);
+
             System.out.println(newsController.create(newsRequestDto));
         } catch (Exception exception) {
             System.out.println(exception.getMessage());
@@ -88,6 +94,17 @@ public class NewsOperationsExecutor extends OperationExecutor {
         try {
             long id = validateNumberInput(Constants.NEWS_ID);
             System.out.println(newsController.getAuthorByNewsId(id));
+        } catch (Exception exception) {
+            System.out.println(exception.getMessage());
+        }
+    }
+
+    public void getTagByNewsId() {
+        System.out.println(Constants.OPERATION + Operations.GET_TAGS_BY_NEWS_ID.getOperationDescription());
+        System.out.println(Constants.ENTER_NEWS_ID);
+        try {
+            long id = validateNumberInput(Constants.NEWS_ID);
+            System.out.println(newsController.getTagByNewsId(id));
         } catch (Exception exception) {
             System.out.println(exception.getMessage());
         }

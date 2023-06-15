@@ -1,9 +1,11 @@
 package com.mjc.school.repository.aop;
 
-import com.mjc.school.repository.impl.NewsRepository;
+import com.mjc.school.repository.impl.AuthorRepository;
+import com.mjc.school.repository.model.entity.Author;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -13,16 +15,16 @@ import org.springframework.stereotype.Component;
 public class OnDeleteAuthorAspect {
 
     @Autowired
-    private NewsRepository newsRepository;
+    private AuthorRepository authorRepository;
 
     @Pointcut("within(com.mjc.school.repository.impl.AuthorRepository) && @annotation(com.mjc.school.repository.aop.annotation.OnDelete)")
     public void hasOnDeleteAnnotation() {
 
     }
 
-    @After(value = "hasOnDeleteAnnotation() && args(id)")
+    @Before(value = "hasOnDeleteAnnotation() && args(id)")
     public void onDeleteAnnotationProcessor(JoinPoint joinPoint, Long id) {
-//        newsRepository.readAll().stream().filter(news -> news.getAuthorId().equals(id))
-//                .forEach(news -> news.setAuthorId(null));
+        Author author = authorRepository.readById(id).get();
+        author.getNews().forEach(news -> news.setAuthor(null));
     }
 }

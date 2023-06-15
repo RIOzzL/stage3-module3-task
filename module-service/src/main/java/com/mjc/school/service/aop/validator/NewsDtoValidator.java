@@ -1,9 +1,11 @@
 package com.mjc.school.service.aop.validator;
 
+import com.mjc.school.service.aop.validator.restriction.Size;
 import com.mjc.school.service.dto.NewsDto;
 import com.mjc.school.service.exception.ValidatorException;
+import com.mjc.school.service.impl.AuthorService;
 import com.mjc.school.service.impl.NewsService;
-import com.mjc.school.service.aop.validator.restriction.Size;
+import com.mjc.school.service.impl.TagService;
 import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -11,6 +13,7 @@ import org.springframework.stereotype.Component;
 import java.lang.reflect.Field;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
 
 import static com.mjc.school.service.exception.ServiceError.*;
 
@@ -18,12 +21,14 @@ import static com.mjc.school.service.exception.ServiceError.*;
 public class NewsDtoValidator implements Validator<NewsDto> {
 
     private final NewsService newsService;
-    private final AuthorDtoValidator authorDtoValidator;
+    private final TagService tagService;
+    private final AuthorService authorService;
 
     @Autowired
-    public NewsDtoValidator(NewsService newsService, AuthorDtoValidator authorDtoValidator) {
+    public NewsDtoValidator(NewsService newsService, TagService tagService, AuthorService authorService) {
         this.newsService = newsService;
-        this.authorDtoValidator = authorDtoValidator;
+        this.tagService = tagService;
+        this.authorService = authorService;
     }
 
 
@@ -42,7 +47,7 @@ public class NewsDtoValidator implements Validator<NewsDto> {
         if (!fieldsWithSizeAnnotation.isEmpty()) {
             errorMessage.append(sizeAnnotationValidation(newsDto));
         }
-        if (!newsService.readAll().stream().map(NewsDto::getAuthorId).toList().contains(newsDto.getAuthorId())) {
+        if (!authorService.existById(newsDto.getAuthorId())) {
             errorMessage.append(String.format(AUTHOR_ID_DOES_NOT_EXIST.getMessage(), newsDto.getAuthorId())).append("\n");
         }
         if (!errorMessage.isEmpty()) {
@@ -63,8 +68,16 @@ public class NewsDtoValidator implements Validator<NewsDto> {
             errorMessage.append(sizeAnnotationValidation(newsDto));
         }
         if (newsDto.getAuthorId() != null) {
-            if (!newsService.readAll().stream().map(NewsDto::getAuthorId).toList().contains(newsDto.getAuthorId())) {
+            if (!authorService.existById(newsDto.getAuthorId())) {
                 errorMessage.append(String.format(AUTHOR_ID_DOES_NOT_EXIST.getMessage(), newsDto.getAuthorId())).append("\n");
+            }
+        }
+        if (!newsDto.getTagsId().isEmpty()) {
+            Set<Long> tagsId = newsDto.getTagsId();
+            for (Long tagId : tagsId) {
+                if (!tagService.isTagExist(tagId)) {
+                    errorMessage.append(String.format(TAG_ID_DOES_NOT_EXIST.getMessage(), tagId)).append("\n");
+                }
             }
         }
         if (!errorMessage.isEmpty()) {

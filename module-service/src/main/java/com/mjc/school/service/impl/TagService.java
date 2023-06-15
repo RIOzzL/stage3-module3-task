@@ -3,6 +3,9 @@ package com.mjc.school.service.impl;
 import com.mjc.school.repository.impl.TagRepository;
 import com.mjc.school.repository.model.entity.Tag;
 import com.mjc.school.service.BaseService;
+import com.mjc.school.service.aop.validator.restriction.CreateValid;
+import com.mjc.school.service.aop.validator.restriction.IsEntityExist;
+import com.mjc.school.service.aop.validator.restriction.UpdateValid;
 import com.mjc.school.service.dto.TagDto;
 import com.mjc.school.service.exception.ValidatorException;
 import com.mjc.school.service.mapper.TagMapper;
@@ -36,8 +39,9 @@ public class TagService implements BaseService<TagDto, TagDto, Long> {
                 .collect(Collectors.toList());
     }
 
+    @Transactional(readOnly = true)
     @Override
-    public TagDto readById(Long id) {
+    public TagDto readById(@IsEntityExist Long id) {
         Optional<Tag> tag = tagRepository.readById(id);
         if (tag.isPresent()) {
             return tagMapper.toDto(tag.get());
@@ -46,20 +50,30 @@ public class TagService implements BaseService<TagDto, TagDto, Long> {
         }
     }
 
+    @Transactional
     @Override
+    @CreateValid
     public TagDto create(TagDto createRequest) {
         Tag tag = tagRepository.create(tagMapper.toEntity(createRequest));
         return tagMapper.toDto(tag);
     }
 
+    @Transactional
     @Override
+    @UpdateValid
     public TagDto update(TagDto updateRequest) {
         Tag tag = tagRepository.update(tagMapper.toEntity(updateRequest));
         return tagMapper.toDto(tag);
     }
 
+    @Transactional
     @Override
-    public boolean deleteById(Long id) {
+    public boolean deleteById(@IsEntityExist Long id) {
         return tagRepository.deleteById(id);
+    }
+
+    @Transactional
+    public boolean isTagExist(Long id) {
+        return tagRepository.existById(id);
     }
 }

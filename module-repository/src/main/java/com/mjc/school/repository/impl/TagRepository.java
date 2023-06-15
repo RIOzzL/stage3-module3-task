@@ -51,6 +51,6 @@ public class TagRepository implements BaseRepository<Tag, Long> {
 
     @Override
     public boolean existById(Long id) {
-        return false;
+        return readById(id).isPresent();
     }
 }

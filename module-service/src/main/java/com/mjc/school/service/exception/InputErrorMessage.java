@@ -1,7 +1,9 @@
 package com.mjc.school.service.exception;
 
 public enum InputErrorMessage {
-    VALIDATE_INT_VALUE("000013","%s should be number");
+    VALIDATE_INT_VALUE("000013", "%s should be number"),
+
+    VALIDATE_INT_ARRAY_VALUE("000030", "%s must be numbers entered with spaces");
 
     private final String errorMessage;
 

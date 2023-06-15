@@ -3,6 +3,7 @@ package com.mjc.school.repository.impl;
 import com.mjc.school.repository.BaseRepository;
 import com.mjc.school.repository.model.entity.Author;
 import com.mjc.school.repository.model.entity.News;
+import com.mjc.school.repository.model.entity.Tag;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
@@ -50,12 +51,12 @@ public class NewsRepository implements BaseRepository<News, Long> {
 
     @Override
     public boolean deleteById(Long id) {
-        if (existById(id)) {
-            News news = readById(id).get();
-            entityManager.remove(news);
-            return true;
-        }
-        return false;
+//        if (existById(id)) {
+        News news = readById(id).get();
+        entityManager.remove(news);
+        return true;
+//        }
+//        return false;
     }
 
     @Override
@@ -66,5 +67,16 @@ public class NewsRepository implements BaseRepository<News, Long> {
     public Author getAuthorByNewsId(long id) {
         News news = readById(id).get();
         return news.getAuthor();
+    }
+
+    // Get Tag list by using jpql(hql) query
+    public List<Tag> getTagByNewsId(long id) {
+        String getTagsSlq = "select tag from News news " +
+                "inner join news.tags tag " +
+                "where news.id = :id";
+        List<Tag> tags = entityManager.createQuery(getTagsSlq, Tag.class)
+                .setParameter("id", id)
+                .getResultList();
+        return tags;
     }
 }

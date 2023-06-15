@@ -7,6 +7,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 import java.time.LocalDateTime;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -24,4 +25,6 @@ public class NewsDto {
     private LocalDateTime lastUpdatedDate;
 
     private Long authorId;
+
+    private Set<Long> tagsId;
 }
