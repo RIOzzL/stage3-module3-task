@@ -3,6 +3,9 @@ package com.mjc.school.service.impl;
 import com.mjc.school.repository.impl.NewsRepository;
 import com.mjc.school.repository.model.entity.News;
 import com.mjc.school.service.BaseService;
+import com.mjc.school.service.aop.validator.restriction.CreateValid;
+import com.mjc.school.service.aop.validator.restriction.IsEntityExist;
+import com.mjc.school.service.aop.validator.restriction.UpdateValid;
 import com.mjc.school.service.dto.NewsDto;
 import com.mjc.school.service.exception.ValidatorException;
 import com.mjc.school.service.mapper.NewsMapper;
@@ -40,7 +43,7 @@ public class NewsService implements BaseService<NewsDto, NewsDto, Long> {
 
     @Override
     @Transactional(readOnly = true)
-    public NewsDto readById(Long id) {
+    public NewsDto readById(@IsEntityExist Long id) {
         Optional<News> news = newsRepository.readById(id);
         if (news.isPresent()) {
             return newsMapper.toDto(news.get());
@@ -51,6 +54,7 @@ public class NewsService implements BaseService<NewsDto, NewsDto, Long> {
 
     @Override
     @Transactional
+    @CreateValid
     public NewsDto create(NewsDto createRequest) {
         News news = newsRepository.create(newsMapper.toEntity(createRequest));
         return newsMapper.toDto(news);
@@ -58,6 +62,7 @@ public class NewsService implements BaseService<NewsDto, NewsDto, Long> {
 
     @Override
     @Transactional
+    @UpdateValid
     public NewsDto update(NewsDto updateRequest) {
         News update = newsRepository.update(newsMapper.toEntity(updateRequest));
         return newsMapper.toDto(update);
@@ -65,7 +70,7 @@ public class NewsService implements BaseService<NewsDto, NewsDto, Long> {
 
     @Override
     @Transactional
-    public boolean deleteById(Long id) {
+    public boolean deleteById(@IsEntityExist Long id) {
         return newsRepository.deleteById(id);
     }
 

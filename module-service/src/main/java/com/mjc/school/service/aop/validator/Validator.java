@@ -1,4 +1,4 @@
-package com.mjc.school.service.validator;
+package com.mjc.school.service.aop.validator;
 
 import lombok.SneakyThrows;
 

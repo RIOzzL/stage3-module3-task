@@ -1,4 +1,4 @@
-package com.mjc.school.service.validator.restriction;
+package com.mjc.school.service.aop.validator.restriction;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,5 +7,5 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface CreateValid {
+public @interface UpdateValid {
 }

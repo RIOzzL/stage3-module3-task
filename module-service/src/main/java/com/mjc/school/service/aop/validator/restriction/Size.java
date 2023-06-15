@@ -1,4 +1,4 @@
-package com.mjc.school.service.validator.restriction;
+package com.mjc.school.service.aop.validator.restriction;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,5 +7,10 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface NotNull {
+public @interface Size {
+
+    int min();
+
+    int max();
+
 }

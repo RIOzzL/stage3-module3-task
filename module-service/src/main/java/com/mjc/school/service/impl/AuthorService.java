@@ -3,6 +3,9 @@ package com.mjc.school.service.impl;
 import com.mjc.school.repository.impl.AuthorRepository;
 import com.mjc.school.repository.model.entity.Author;
 import com.mjc.school.service.BaseService;
+import com.mjc.school.service.aop.validator.restriction.CreateValid;
+import com.mjc.school.service.aop.validator.restriction.IsEntityExist;
+import com.mjc.school.service.aop.validator.restriction.UpdateValid;
 import com.mjc.school.service.dto.AuthorDto;
 import com.mjc.school.service.exception.ValidatorException;
 import com.mjc.school.service.mapper.AuthorMapper;
@@ -42,7 +45,7 @@ public class AuthorService implements BaseService<AuthorDto, AuthorDto, Long> {
 
     @Override
     @Transactional(readOnly = true)
-    public AuthorDto readById(Long id) {
+    public AuthorDto readById(@IsEntityExist Long id) {
         Optional<Author> author = authorRepository.readById(id);
         if (author.isPresent()) {
             return mapper.toDto(author.get());
@@ -53,6 +56,7 @@ public class AuthorService implements BaseService<AuthorDto, AuthorDto, Long> {
 
     @Override
     @Transactional
+    @CreateValid
     public AuthorDto create(AuthorDto createRequest) {
         Author author = mapper.toEntity(createRequest);
         return mapper.toDto(authorRepository.create(author));
@@ -60,6 +64,7 @@ public class AuthorService implements BaseService<AuthorDto, AuthorDto, Long> {
 
     @Override
     @Transactional
+    @UpdateValid
     public AuthorDto update(AuthorDto updateRequest) {
         Author updatedAuthor = mapper.toEntity(updateRequest);
         Author authorToBeUpdate = authorRepository.readById(updatedAuthor.getId()).get();
@@ -70,7 +75,7 @@ public class AuthorService implements BaseService<AuthorDto, AuthorDto, Long> {
 
     @Override
     @Transactional
-    public boolean deleteById(Long id) {
+    public boolean deleteById(@IsEntityExist Long id) {
         return authorRepository.deleteById(id);
     }
 

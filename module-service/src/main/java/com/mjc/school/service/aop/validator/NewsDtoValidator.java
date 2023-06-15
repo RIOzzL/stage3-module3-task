@@ -1,9 +1,9 @@
-package com.mjc.school.service.validator;
+package com.mjc.school.service.aop.validator;
 
 import com.mjc.school.service.dto.NewsDto;
 import com.mjc.school.service.exception.ValidatorException;
 import com.mjc.school.service.impl.NewsService;
-import com.mjc.school.service.validator.restriction.Size;
+import com.mjc.school.service.aop.validator.restriction.Size;
 import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
