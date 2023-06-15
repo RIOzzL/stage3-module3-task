@@ -43,7 +43,7 @@ public class News implements BaseEntity<Long> {
     @JoinColumn(name = "author_id", referencedColumnName = "id")
     private Author author;
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "news_tags",
             joinColumns = @JoinColumn(name = "news_id"),
             inverseJoinColumns = @JoinColumn(name = "tag_id"))

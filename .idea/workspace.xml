@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20a4d6c1-45d3-4acd-98b9-cdbaa4952cbf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/aop/ValidationAspect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.bin" afterDir="false" />
@@ -14,30 +13,16 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-main/build/classes/java/main/com/mjc/school/main/ApplicationRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-main/build/classes/java/main/com/mjc/school/main/ApplicationRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-main/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/module-main/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/impl/AuthorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/impl/AuthorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/impl/NewsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/impl/NewsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/model/entity/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/model/entity/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/model/entity/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/model/entity/News.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/model/entity/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/model/entity/Tag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/aop/AuthorControllerValidationAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/aop/AuthorControllerValidationAspect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/aop/NewsControllerValidationAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/aop/NewsControllerValidationAspect.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module-service/build/libs/module-service.jar" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/build/libs/module-service.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module-service/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/dto/AuthorDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/dto/AuthorDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/dto/NewsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/dto/NewsDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/dto/TagDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/dto/TagDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/impl/AuthorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/impl/AuthorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/impl/NewsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/impl/NewsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/validator/AuthorDtoValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/aop/validator/AuthorDtoValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/validator/NewsDtoValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/aop/validator/NewsDtoValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/validator/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/aop/validator/Validator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/validator/restriction/CreateValid.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/aop/validator/restriction/CreateValid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/validator/restriction/IsEntityExist.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/aop/validator/restriction/IsEntityExist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/validator/restriction/NotNull.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/aop/validator/restriction/NotNull.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/validator/restriction/Size.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/aop/validator/restriction/Size.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/validator/restriction/UpdateValid.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/aop/validator/restriction/UpdateValid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/aop/AuthorControllerValidationAspect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/aop/NewsControllerValidationAspect.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/module-web/build/libs/module-web.jar" beforeDir="false" afterPath="$PROJECT_DIR$/module-web/build/libs/module-web.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-web/src/main/java/com/mjc/school/controller/aop/AuthorControllerValidationAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/aop/AuthorControllerValidationAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-web/src/main/java/com/mjc/school/controller/aop/NewsControllerValidationAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/aop/NewsControllerValidationAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-web/src/main/java/com/mjc/school/controller/impl/AuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-web/src/main/java/com/mjc/school/controller/impl/AuthorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-web/src/main/java/com/mjc/school/controller/impl/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-web/src/main/java/com/mjc/school/controller/impl/NewsController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,7 +242,7 @@
       <workItem from="1686636950747" duration="21411000" />
       <workItem from="1686680992530" duration="3488000" />
       <workItem from="1686732120799" duration="17827000" />
-      <workItem from="1686816483831" duration="2736000" />
+      <workItem from="1686816483831" duration="7196000" />
     </task>
     <servers />
   </component>

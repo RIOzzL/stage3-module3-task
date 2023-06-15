@@ -26,6 +26,6 @@ public class Tag implements BaseEntity<Long> {
     @Column(name = "name")
     private String name;
 
-    @ManyToMany(mappedBy = "tags")
+    @ManyToMany(mappedBy = "tags", fetch = FetchType.LAZY)
     private List<News> news;
 }

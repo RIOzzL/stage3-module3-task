@@ -14,6 +14,7 @@ public class NewsRepository implements BaseRepository<News, Long> {
 
     private static final String READ_ALL = "SELECT n FROM News n";
 
+    // Repository with using only JPA
     @PersistenceContext
     private EntityManager entityManager;
 

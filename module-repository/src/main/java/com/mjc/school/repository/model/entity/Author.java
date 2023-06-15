@@ -35,7 +35,7 @@ public class Author implements BaseEntity<Long> {
     @Column(name = "last_update_date")
     private LocalDateTime lastUpdateDate;
 
-    @OneToMany(mappedBy = "author")
+    @OneToMany(mappedBy = "author", fetch = FetchType.LAZY)
     private List<News> news;
 
     @Override
