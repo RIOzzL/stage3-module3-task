@@ -144,4 +144,11 @@ public class MenuCommands {
                 .findFirst().get()
                 .execute();
     }
+
+    @CommandHandler(18)
+    public void getNewsByParams() {
+        commands.stream().filter(command -> command instanceof GetNewsByParamsOperation)
+                .findFirst().get()
+                .execute();
+    }
 }

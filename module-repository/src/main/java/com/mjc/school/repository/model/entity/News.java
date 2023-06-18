@@ -13,7 +13,8 @@ import java.util.Set;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString(exclude = "author")
+@EqualsAndHashCode(exclude = {"author", "tags"})
+@ToString(exclude = {"author", "tags"})
 @Builder
 @Entity
 @Table(name = "news")

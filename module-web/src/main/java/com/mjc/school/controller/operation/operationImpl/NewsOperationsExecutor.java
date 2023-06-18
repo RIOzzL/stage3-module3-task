@@ -8,6 +8,7 @@ import com.mjc.school.service.dto.TagDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -55,8 +56,8 @@ public class NewsOperationsExecutor extends OperationExecutor {
             long authorId = validateNumberInput(AUTHOR_ID);
             newsRequestDto.setAuthorId(authorId);
 
-            System.out.println(ENTER_TAGS_ID);
-            Set<Long> tagsId = validateNumberArrayInput(TAGS_ID);
+            System.out.println(ENTER_TAG_IDS);
+            Set<Long> tagsId = validateNumberArrayInput(TAG_IDS);
             Set<TagDto> tags = tagsId.stream().map(id -> {
                 TagDto tagDto = new TagDto();
                 tagDto.setId(id);
@@ -85,8 +86,8 @@ public class NewsOperationsExecutor extends OperationExecutor {
             System.out.println(ENTER_AUTHOR_ID);
             newsDto.setAuthorId(validateNumberInput(AUTHOR_ID));
 
-            System.out.println(ENTER_TAGS_ID);
-            Set<Long> tagsId = validateNumberArrayInput(TAGS_ID);
+            System.out.println(ENTER_TAG_IDS);
+            Set<Long> tagsId = validateNumberArrayInput(TAG_IDS);
             Set<TagDto> tags = tagsId.stream().map(id -> {
                 TagDto tagDto = new TagDto();
                 tagDto.setId(id);
@@ -135,11 +136,6 @@ public class NewsOperationsExecutor extends OperationExecutor {
 
     public void getNewsByParams() {
         System.out.println(OPERATION + Operations.GET_NEWS_BY_PARAMS.getOperationDescription());
-        String authorName;
-        String newsTitle;
-        String newsContent;
-        List<String> tagsName;
-        Set<Long> tagsId;
         NewsParamsDto newsParamsDtoRequest = new NewsParamsDto();
 
         System.out.println(ENTER_AUTHOR_NAME);
@@ -152,11 +148,13 @@ public class NewsOperationsExecutor extends OperationExecutor {
         newsParamsDtoRequest.setContent(scanner.nextLine());
 
 
-        System.out.println(ENTER_TAGS_NAME);
-        newsParamsDtoRequest.setTagNames(List.of(scanner.nextLine().split(" ")));
+        System.out.println(ENTER_TAG_NAMES);
+        String tagNames = scanner.nextLine();
+        newsParamsDtoRequest.setTagNames(tagNames.isBlank() ? Collections.emptyList() :
+                List.of(tagNames.split(" ")));
 
-        System.out.println(ENTER_TAGS_ID);
-        newsParamsDtoRequest.setTagIds(validateNumberArrayInput(TAG_ID));
+        System.out.println(ENTER_TAG_IDS);
+        newsParamsDtoRequest.setTagIds(validateNumberArrayInputForParams(TAG_ID));
 
         List<NewsDto> newsByParams = newsController.getNewsByParams(newsParamsDtoRequest);
         System.out.println(newsByParams);

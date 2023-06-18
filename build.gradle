@@ -24,11 +24,13 @@ subprojects {
         implementation "org.springframework.boot:spring-boot-starter-data-jpa:$springBootStarterDataJpaVersion"
         implementation 'org.postgresql:postgresql:42.6.0'
 
-        implementation group: 'org.springframework', name: 'spring-aop', version: '5.3.18'
-        implementation group: 'org.aspectj', name: 'aspectjweaver',
-                version: '1.9.19'
+        //    implementation group: 'org.springframework', name: 'spring-aop', version: '5.3.18'
+        //     implementation group: 'org.aspectj', name: 'aspectjweaver',
+        //            version: '1.9.19'
 
-        annotationProcessor 'org.hibernate:hibernate-jpamodelgen:6.1.6.Final'
+        annotationProcessor "org.hibernate:hibernate-jpamodelgen:$hibernateJpamodelgen"
+
+        implementation "org.apache.commons:commons-lang3:$commonsLang3"
 
         testImplementation "org.springframework:spring-test:$springVersion"
         testImplementation "org.junit.jupiter:junit-jupiter-api:$jupiterVersion"
@@ -36,7 +38,8 @@ subprojects {
         testImplementation "com.tngtech.archunit:archunit:$archUnitVersion"
         compileOnly "org.projectlombok:lombok:$lombokVersion"
         annotationProcessor "org.projectlombok:lombok:$lombokAnnotationVersion"
-        implementation "org.mapstruct:mapstruct:1.4.2.Final"
+        // implementation "org.mapstruct:mapstruct:1.4.2.Final"
+        testImplementation "com.h2database:h2:$h2Version"
 
     }
     test {

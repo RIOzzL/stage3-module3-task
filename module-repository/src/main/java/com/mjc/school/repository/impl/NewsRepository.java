@@ -1,16 +1,11 @@
 package com.mjc.school.repository.impl;
 
 import com.mjc.school.repository.BaseRepository;
-import com.mjc.school.repository.model.entity.Author;
-import com.mjc.school.repository.model.entity.News;
-import com.mjc.school.repository.model.entity.Tag;
+import com.mjc.school.repository.model.entity.*;
 import com.mjc.school.repository.model.params.NewsParams;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
-import jakarta.persistence.criteria.CriteriaBuilder;
-import jakarta.persistence.criteria.CriteriaQuery;
-import jakarta.persistence.criteria.Predicate;
-import jakarta.persistence.criteria.Root;
+import jakarta.persistence.criteria.*;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -89,11 +84,38 @@ public class NewsRepository implements BaseRepository<News, Long> {
     public List<News> getNewsByParams(NewsParams newsParams) {
         CriteriaBuilder cb = entityManager.getCriteriaBuilder();
         CriteriaQuery<News> criteria = cb.createQuery(News.class);
-
         Root<News> news = criteria.from(News.class);
 
-
         List<Predicate> predicates = new ArrayList<>();
+        if (newsParams.getAuthorName() != null && !newsParams.getAuthorName().isBlank()) {
+            Join<News, Author> author = news.join(News_.author);
+            predicates.add(cb.like(author.get(Author_.name), "%" + newsParams.getAuthorName() + "%"));
+        }
+
+        if (newsParams.getTitle() != null && !newsParams.getTitle().isBlank()) {
+            predicates.add(cb.like(news.get(News_.title), "%" + newsParams.getTitle() + "%"));
+        }
+
+        if (newsParams.getContent() != null && !newsParams.getContent().isBlank()) {
+            predicates.add(cb.like(news.get(News_.content), "%" + newsParams.getContent() + "%"));
+        }
+
+        if (newsParams.getTagIds() != null && !newsParams.getTagIds().isEmpty()) {
+            SetJoin<News, Tag> tags = news.join(News_.tags);
+            Predicate inTagsId = tags.get(Tag_.id).in(newsParams.getTagIds());
+            predicates.add(inTagsId);
+        }
+
+        if (newsParams.getTagNames() != null && !newsParams.getTagNames().isEmpty()) {
+            SetJoin<News, Tag> tags = news.join(News_.tags);
+            Predicate inTagsName = tags.get(Tag_.name).in(newsParams.getTagNames());
+            predicates.add(inTagsName);
+        }
+
+        criteria.select(news)
+                .where(
+                        predicates.toArray(Predicate[]::new)
+                );
 
         return entityManager.createQuery(criteria)
                 .getResultList();

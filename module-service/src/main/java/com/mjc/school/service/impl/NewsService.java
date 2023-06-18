@@ -121,6 +121,7 @@ public class NewsService implements BaseService<NewsDto, NewsDto, Long> {
         return tags.stream().map(tagMapper::toDto).toList();
     }
 
+    @Transactional
     public List<NewsDto> getNewsByParams(NewsParamsDto newsParamsDtoRequest) {
         // Here we map to model, not to Entity
         NewsParams newsParams = newsParamsMapper.toEntity(newsParamsDtoRequest);

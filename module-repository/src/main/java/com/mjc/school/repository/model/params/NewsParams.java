@@ -22,5 +22,5 @@ public class NewsParams {
     private String title;
     private String content;
     private List<String> tagNames;
-    private Set<Long> tagsId;
+    private Set<Long> tagIds;
 }
