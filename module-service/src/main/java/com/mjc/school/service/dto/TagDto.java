@@ -10,7 +10,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-@EqualsAndHashCode
+@EqualsAndHashCode(of = "id")
 public class TagDto {
 
     private Long id;

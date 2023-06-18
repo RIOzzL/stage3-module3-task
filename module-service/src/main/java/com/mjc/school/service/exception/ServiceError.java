@@ -6,7 +6,7 @@ public enum ServiceError {
     VALIDATE_NEGATIVE_OR_NULL_NUMBER("000010", "%s can not be null or less than 1. %s is: %s"),
     VALIDATE_NULL_STRING("000011", "%s can not be null. %s is null"),
     VALIDATE_STRING_LENGTH("000012", "%s can not be less than %d and more than %d symbols. %s is %s"),
-    VALIDATE_INT_VALUE("000013", "%s should be number"),
+    VALIDATE_LONG_VALUE("000013", "%s should be number"),
     TAG_ID_DOES_NOT_EXIST("000020", "Tag Id does not exist. Tag Id is: $s");
 
     private final String errorMessage;

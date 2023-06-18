@@ -26,5 +26,5 @@ public class NewsDto {
 
     private Long authorId;
 
-    private Set<Long> tagsId;
+    private Set<TagDto> tags;
 }

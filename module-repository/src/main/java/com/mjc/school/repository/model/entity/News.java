@@ -8,7 +8,7 @@ import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.LocalDateTime;
-import java.util.List;
+import java.util.Set;
 
 @Data
 @AllArgsConstructor
@@ -39,15 +39,15 @@ public class News implements BaseEntity<Long> {
     @Column(name = "last_update_date")
     private LocalDateTime lastUpdateDate;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "author_id", referencedColumnName = "id")
     private Author author;
 
-    @ManyToMany(fetch = FetchType.LAZY)
+    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinTable(name = "news_tags",
             joinColumns = @JoinColumn(name = "news_id"),
             inverseJoinColumns = @JoinColumn(name = "tag_id"))
-    private List<Tag> tags;
+    private Set<Tag> tags;
 
     @Override
     public Long getId() {

@@ -2,6 +2,7 @@ package com.mjc.school.service.aop.validator;
 
 import com.mjc.school.service.aop.validator.restriction.Size;
 import com.mjc.school.service.dto.NewsDto;
+import com.mjc.school.service.dto.TagDto;
 import com.mjc.school.service.exception.ValidatorException;
 import com.mjc.school.service.impl.AuthorService;
 import com.mjc.school.service.impl.NewsService;
@@ -50,6 +51,9 @@ public class NewsDtoValidator implements Validator<NewsDto> {
         if (!authorService.existById(newsDto.getAuthorId())) {
             errorMessage.append(String.format(AUTHOR_ID_DOES_NOT_EXIST.getMessage(), newsDto.getAuthorId())).append("\n");
         }
+        if (!newsDto.getTags().isEmpty()) {
+            isTagsExistValidation(errorMessage, newsDto.getTags());
+        }
         if (!errorMessage.isEmpty()) {
             throw new ValidatorException(errorMessage.toString());
         }
@@ -72,13 +76,8 @@ public class NewsDtoValidator implements Validator<NewsDto> {
                 errorMessage.append(String.format(AUTHOR_ID_DOES_NOT_EXIST.getMessage(), newsDto.getAuthorId())).append("\n");
             }
         }
-        if (!newsDto.getTagsId().isEmpty()) {
-            Set<Long> tagsId = newsDto.getTagsId();
-            for (Long tagId : tagsId) {
-                if (!tagService.isTagExist(tagId)) {
-                    errorMessage.append(String.format(TAG_ID_DOES_NOT_EXIST.getMessage(), tagId)).append("\n");
-                }
-            }
+        if (!newsDto.getTags().isEmpty()) {
+            isTagsExistValidation(errorMessage, newsDto.getTags());
         }
         if (!errorMessage.isEmpty()) {
             throw new ValidatorException(errorMessage.toString());
@@ -115,6 +114,14 @@ public class NewsDtoValidator implements Validator<NewsDto> {
             return true;
         } else {
             throw new ValidatorException(String.format(NEWS_ID_DOES_NOT_EXIST.getMessage(), id));
+        }
+    }
+
+    private void isTagsExistValidation(StringBuilder errorMessage, Set<TagDto> tagsDto) {
+        for (TagDto tag : tagsDto) {
+            if (!tagService.isTagExist(tag.getId())) {
+                errorMessage.append(String.format(TAG_ID_DOES_NOT_EXIST.getMessage(), tag.getId())).append("\n");
+            }
         }
     }
 }

@@ -4,10 +4,16 @@ import com.mjc.school.repository.BaseRepository;
 import com.mjc.school.repository.model.entity.Author;
 import com.mjc.school.repository.model.entity.News;
 import com.mjc.school.repository.model.entity.Tag;
+import com.mjc.school.repository.model.params.NewsParams;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
+import jakarta.persistence.criteria.CriteriaBuilder;
+import jakarta.persistence.criteria.CriteriaQuery;
+import jakarta.persistence.criteria.Predicate;
+import jakarta.persistence.criteria.Root;
 import org.springframework.stereotype.Repository;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -78,5 +84,18 @@ public class NewsRepository implements BaseRepository<News, Long> {
                 .setParameter("id", id)
                 .getResultList();
         return tags;
+    }
+
+    public List<News> getNewsByParams(NewsParams newsParams) {
+        CriteriaBuilder cb = entityManager.getCriteriaBuilder();
+        CriteriaQuery<News> criteria = cb.createQuery(News.class);
+
+        Root<News> news = criteria.from(News.class);
+
+
+        List<Predicate> predicates = new ArrayList<>();
+
+        return entityManager.createQuery(criteria)
+                .getResultList();
     }
 }

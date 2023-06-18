@@ -15,8 +15,9 @@ public abstract class OperationExecutor {
         long nextLong;
         try {
             nextLong = scanner.nextLong();
+            scanner.nextLine();
         } catch (RuntimeException exception) {
-            throw new InputValidatorException(String.format(InputErrorMessage.VALIDATE_INT_VALUE.getMessage(), param));
+            throw new InputValidatorException(String.format(InputErrorMessage.VALIDATE_LONG_VALUE.getMessage(), param));
         }
         return nextLong;
     }
@@ -28,7 +29,7 @@ public abstract class OperationExecutor {
                     .map(Long::parseLong)
                     .collect(Collectors.toSet());
         } catch (RuntimeException exception) {
-            throw new InputValidatorException(String.format(InputErrorMessage.VALIDATE_INT_VALUE.getMessage(), param));
+            throw new InputValidatorException(String.format(InputErrorMessage.VALIDATE_LONG_VALUE.getMessage(), param));
         }
         return tagsId;
     }

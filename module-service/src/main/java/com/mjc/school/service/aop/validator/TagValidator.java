@@ -1,6 +1,5 @@
 package com.mjc.school.service.aop.validator;
 
-import com.mjc.school.repository.model.entity.Tag;
 import com.mjc.school.service.aop.validator.restriction.Size;
 import com.mjc.school.service.dto.TagDto;
 import com.mjc.school.service.exception.ValidatorException;
@@ -13,8 +12,8 @@ import java.lang.reflect.Field;
 import java.util.Arrays;
 import java.util.List;
 
-import static com.mjc.school.service.exception.ServiceError.*;
-import static com.mjc.school.service.exception.ServiceError.AUTHOR_ID_DOES_NOT_EXIST;
+import static com.mjc.school.service.exception.ServiceError.TAG_ID_DOES_NOT_EXIST;
+import static com.mjc.school.service.exception.ServiceError.VALIDATE_STRING_LENGTH;
 
 @Component
 public class TagValidator implements Validator<TagDto> {
@@ -87,7 +86,7 @@ public class TagValidator implements Validator<TagDto> {
         if (entityExist) {
             return true;
         } else {
-            throw new ValidatorException(String.format(NEWS_ID_DOES_NOT_EXIST.getMessage(), id));
+            throw new ValidatorException(String.format(TAG_ID_DOES_NOT_EXIST.getMessage(), id));
         }
     }
 }
