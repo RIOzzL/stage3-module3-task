@@ -28,6 +28,8 @@ subprojects {
         implementation group: 'org.aspectj', name: 'aspectjweaver',
                 version: '1.9.19'
 
+        annotationProcessor 'org.hibernate:hibernate-jpamodelgen:6.1.6.Final'
+
         testImplementation "org.springframework:spring-test:$springVersion"
         testImplementation "org.junit.jupiter:junit-jupiter-api:$jupiterVersion"
         testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$jupiterVersion"
