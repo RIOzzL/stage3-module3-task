@@ -25,7 +25,7 @@ public class TagOperationExecutor extends OperationExecutor {
         System.out.println(Constants.OPERATION + Operations.GET_TAG_BY_ID.getOperationDescription());
         System.out.println(Constants.ENTER_TAG_ID);
         try {
-            long id = validateNumberInput(Constants.NEWS_ID);
+            long id = validateNumberInput(Constants.TAG_ID);
             System.out.println(tagController.readById(id));
         } catch (Exception exception) {
             System.out.println(exception.getMessage());

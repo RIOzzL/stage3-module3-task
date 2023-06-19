@@ -30,9 +30,9 @@ public class AuthorRepository implements BaseRepository<Author, Long> {
 
     @Override
     public Optional<Author> readById(Long id) {
-        return Optional.ofNullable(entityManager.createQuery(READ_BY_ID, Author.class)
+        return entityManager.createQuery(READ_BY_ID, Author.class)
                 .setParameter("id", id)
-                .getSingleResult());
+                .getResultList().stream().findFirst();
     }
 
     @Override
