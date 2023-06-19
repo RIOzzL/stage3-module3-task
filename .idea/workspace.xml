@@ -8,40 +8,110 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/config/RepositoryConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/config/RepositoryConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/impl/AuthorRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/impl/AuthorRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/impl/NewsRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/impl/NewsRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/impl/TagRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/impl/TagRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/Author.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/Author.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/Author_.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/Author_.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/News.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/News.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/News_.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/News_.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/Tag.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/Tag.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/Tag_.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/Tag_.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/build/generated/sources/annotationProcessor/java/main/com/mjc/school/repository/model/entity/Author_.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/generated/sources/annotationProcessor/java/main/com/mjc/school/repository/model/entity/Author_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/build/generated/sources/annotationProcessor/java/main/com/mjc/school/repository/model/entity/News_.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/generated/sources/annotationProcessor/java/main/com/mjc/school/repository/model/entity/News_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/build/generated/sources/annotationProcessor/java/main/com/mjc/school/repository/model/entity/Tag_.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/generated/sources/annotationProcessor/java/main/com/mjc/school/repository/model/entity/Tag_.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/build/libs/module-repository.jar" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/libs/module-repository.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/config/RepositoryConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/config/RepositoryConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/impl/AuthorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/impl/AuthorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/impl/NewsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/impl/NewsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/impl/TagRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/impl/TagRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/model/entity/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/model/entity/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/model/entity/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/model/entity/News.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/model/entity/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/model/entity/Tag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/impl/AuthorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/impl/AuthorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-main/build/classes/java/main/com/mjc/school/config/AppConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-main/build/classes/java/main/com/mjc/school/main/ApplicationRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-main/build/classes/java/main/com/mjc/school/main/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-main/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/BaseRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/aop/OnDeleteAuthorAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/aop/annotation/OnDelete.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/config/RepositoryConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/impl/AuthorRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/impl/NewsRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/impl/TagRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/BaseEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/Author.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/Author_.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/News$NewsBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/News.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/News_.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/Tag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/Tag_.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/params/NewsParams.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/generated/sources/annotationProcessor/java/main/com/mjc/school/repository/model/entity/Author_.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/generated/sources/annotationProcessor/java/main/com/mjc/school/repository/model/entity/News_.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/generated/sources/annotationProcessor/java/main/com/mjc/school/repository/model/entity/Tag_.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/libs/module-repository.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/resources/main/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/resources/main/authors" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/resources/main/content" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/resources/main/news" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/resources/main/sql/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/resources/main/sql/init.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/BaseService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/aop/AuthorValidationAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/aop/NewsValidationAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/aop/TagValidationAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/aop/validator/AuthorDtoValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/aop/validator/NewsDtoValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/aop/validator/TagValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/aop/validator/Validator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/aop/validator/restriction/CreateValid.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/aop/validator/restriction/IsEntityExist.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/aop/validator/restriction/Size.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/aop/validator/restriction/UpdateValid.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/dto/AuthorDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/dto/NewsDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/dto/NewsParamsDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/dto/TagDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/exception/InputErrorMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/exception/InputValidatorException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/exception/ServiceError.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/exception/ValidatorException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/impl/AuthorService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/impl/NewsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/impl/TagService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/mapper/AuthorMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/mapper/BaseMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/mapper/NewsMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/mapper/NewsParamsMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/classes/java/main/com/mjc/school/service/mapper/TagMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/libs/module-service.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/BaseController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/annotation/CommandHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/annotation/processor/CommandHandlerProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/impl/AuthorController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/impl/NewsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/impl/TagController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/operation/Command.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/operation/MenuCommands.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/operation/commandImpl/CreateAuthorOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/operation/commandImpl/CreateNewsOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/operation/commandImpl/CreateTagOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/operation/commandImpl/DeleteAuthorByIdOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/operation/commandImpl/DeleteNewsByIdOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/operation/commandImpl/DeleteTagByIdOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/operation/commandImpl/GetAllAuthorsOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/operation/commandImpl/GetAllNewsOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/operation/commandImpl/GetAllTagsOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/operation/commandImpl/GetAuthorByIdOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/operation/commandImpl/GetAuthorByNewsIdOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/operation/commandImpl/GetNewsByIdOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/operation/commandImpl/GetNewsByParamsOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/operation/commandImpl/GetTagByIdOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/operation/commandImpl/GetTagsByNewsIdOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/operation/commandImpl/UpdateAuthorOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/operation/commandImpl/UpdateNewsOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/operation/commandImpl/UpdateTagOperation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/operation/operationImpl/AuthorOperationExecutor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/operation/operationImpl/NewsOperationsExecutor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/operation/operationImpl/OperationExecutor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/operation/operationImpl/TagOperationExecutor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/utils/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/classes/java/main/com/mjc/school/controller/utils/Operations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/libs/module-web.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-web/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +158,51 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="stage3-module3-task" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="stage3-module3-task" type="f1a62948:ProjectNode" />
+                <item name="module-main" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="stage3-module3-task" type="f1a62948:ProjectNode" />
+                <item name="module-main" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="stage3-module3-task" type="f1a62948:ProjectNode" />
+                <item name="module-main" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="runtimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="stage3-module3-task" type="f1a62948:ProjectNode" />
+                <item name="module-main" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="runtimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+                <item name="org.springframework.boot:spring-boot-starter-data-jpa:2.7.7" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="stage3-module3-task" type="f1a62948:ProjectNode" />
+                <item name="module-main" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="runtimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+                <item name="org.springframework.boot:spring-boot-starter-data-jpa:2.7.7" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+                <item name="org.springframework.boot:spring-boot-starter-aop:2.7.7" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="stage3-module3-task" type="f1a62948:ProjectNode" />
+                <item name="module-main" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="runtimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+                <item name="org.springframework.boot:spring-boot-starter-data-jpa:2.7.7" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+                <item name="org.springframework.boot:spring-boot-starter-aop:2.7.7" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+                <item name="org.springframework.boot:spring-boot-starter:2.7.7" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
               </path>
             </expand>
             <select />
@@ -156,7 +271,7 @@
       <recent name="com.mjc.school.controller.operation.commandImpl" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Gradle.stage3-module3-task [classes]">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.mjc.school.main.Main" />
@@ -284,10 +399,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.stage3-module3-task:module-repository [classes]" />
-        <item itemvalue="Gradle.stage3-module3-task:module-repository [clean]" />
         <item itemvalue="Gradle.stage3-module3-task [classes]" />
         <item itemvalue="Gradle.stage3-module3-task [clean]" />
+        <item itemvalue="Gradle.stage3-module3-task:module-repository [classes]" />
+        <item itemvalue="Gradle.stage3-module3-task:module-repository [clean]" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -320,7 +435,8 @@
       <workItem from="1687083725101" duration="14462000" />
       <workItem from="1687114153673" duration="534000" />
       <workItem from="1687115080767" duration="756000" />
-      <workItem from="1687158946029" duration="4506000" />
+      <workItem from="1687158946029" duration="4995000" />
+      <workItem from="1687166315344" duration="289000" />
     </task>
     <servers />
   </component>
