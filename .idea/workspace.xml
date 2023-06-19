@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20a4d6c1-45d3-4acd-98b9-cdbaa4952cbf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/impl/AuthorRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/impl/AuthorRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/build/libs/module-repository.jar" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/libs/module-repository.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/impl/AuthorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/impl/AuthorRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -320,7 +310,7 @@
       <workItem from="1687115080767" duration="756000" />
       <workItem from="1687158946029" duration="4995000" />
       <workItem from="1687166315344" duration="459000" />
-      <workItem from="1687167976780" duration="2489000" />
+      <workItem from="1687167976780" duration="4352000" />
     </task>
     <servers />
   </component>
