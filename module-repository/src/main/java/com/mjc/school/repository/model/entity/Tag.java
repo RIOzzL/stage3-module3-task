@@ -1,12 +1,12 @@
 package com.mjc.school.repository.model.entity;
 
 import com.mjc.school.repository.model.BaseEntity;
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import javax.persistence.*;
 import java.util.List;
 
 @Data

@@ -3,10 +3,10 @@ package com.mjc.school.repository.impl;
 import com.mjc.school.repository.BaseRepository;
 import com.mjc.school.repository.aop.annotation.OnDelete;
 import com.mjc.school.repository.model.entity.Author;
-import jakarta.persistence.PersistenceContext;
 import org.hibernate.Session;
 import org.springframework.stereotype.Repository;
 
+import javax.persistence.PersistenceContext;
 import java.util.List;
 import java.util.Optional;
 

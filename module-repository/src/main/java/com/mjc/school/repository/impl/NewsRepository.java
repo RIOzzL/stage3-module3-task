@@ -3,14 +3,18 @@ package com.mjc.school.repository.impl;
 import com.mjc.school.repository.BaseRepository;
 import com.mjc.school.repository.model.entity.*;
 import com.mjc.school.repository.model.params.NewsParams;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.PersistenceContext;
-import jakarta.persistence.criteria.*;
+//import jakarta.persistence.EntityManager;
+//import jakarta.persistence.PersistenceContext;
+//import jakarta.persistence.criteria.*;
 import org.springframework.stereotype.Repository;
 
+import javax.persistence.*;
+import javax.persistence.criteria.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+
+import static com.mjc.school.repository.model.entity.News_.*;
 
 @Repository
 public class NewsRepository implements BaseRepository<News, Long> {
@@ -52,12 +56,9 @@ public class NewsRepository implements BaseRepository<News, Long> {
 
     @Override
     public boolean deleteById(Long id) {
-//        if (existById(id)) {
         News news = readById(id).get();
         entityManager.remove(news);
         return true;
-//        }
-//        return false;
     }
 
     @Override
@@ -93,11 +94,11 @@ public class NewsRepository implements BaseRepository<News, Long> {
         }
 
         if (newsParams.getTitle() != null && !newsParams.getTitle().isBlank()) {
-            predicates.add(cb.like(news.get(News_.title), "%" + newsParams.getTitle() + "%"));
+            predicates.add(cb.like(news.get(title), "%" + newsParams.getTitle() + "%"));
         }
 
         if (newsParams.getContent() != null && !newsParams.getContent().isBlank()) {
-            predicates.add(cb.like(news.get(News_.content), "%" + newsParams.getContent() + "%"));
+            predicates.add(cb.like(news.get(content), "%" + newsParams.getContent() + "%"));
         }
 
         if (newsParams.getTagIds() != null && !newsParams.getTagIds().isEmpty()) {

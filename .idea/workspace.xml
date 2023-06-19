@@ -5,8 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20a4d6c1-45d3-4acd-98b9-cdbaa4952cbf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/config/RepositoryConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/config/RepositoryConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/impl/AuthorRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/impl/AuthorRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/impl/NewsRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/impl/NewsRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/impl/TagRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/impl/TagRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/Author.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/Author.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/Author_.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/Author_.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/News.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/News.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/News_.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/News_.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/Tag.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/Tag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/Tag_.class" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/classes/java/main/com/mjc/school/repository/model/entity/Tag_.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/generated/sources/annotationProcessor/java/main/com/mjc/school/repository/model/entity/Author_.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/generated/sources/annotationProcessor/java/main/com/mjc/school/repository/model/entity/Author_.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/generated/sources/annotationProcessor/java/main/com/mjc/school/repository/model/entity/News_.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/generated/sources/annotationProcessor/java/main/com/mjc/school/repository/model/entity/News_.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/generated/sources/annotationProcessor/java/main/com/mjc/school/repository/model/entity/Tag_.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/generated/sources/annotationProcessor/java/main/com/mjc/school/repository/model/entity/Tag_.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/libs/module-repository.jar" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/libs/module-repository.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/config/RepositoryConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/config/RepositoryConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/impl/AuthorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/impl/AuthorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/impl/NewsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/impl/NewsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/impl/TagRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/impl/TagRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/model/entity/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/model/entity/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/model/entity/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/model/entity/News.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/model/entity/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/model/entity/Tag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/impl/AuthorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/impl/AuthorService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,37 +87,7 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="stage3-module3-task" type="f1a62948:ProjectNode" />
-                <item name="module-repository" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="stage3-module3-task" type="f1a62948:ProjectNode" />
-                <item name="module-repository" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="stage3-module3-task" type="f1a62948:ProjectNode" />
-                <item name="module-repository" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="stage3-module3-task" type="f1a62948:ProjectNode" />
-                <item name="module-repository" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-                <item name="org.springframework.boot:spring-boot-starter-data-jpa:3.0.1" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="stage3-module3-task" type="f1a62948:ProjectNode" />
-                <item name="module-repository" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-                <item name="org.springframework.boot:spring-boot-starter-data-jpa:3.0.1" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
-                <item name="org.hibernate.orm:hibernate-core:6.1.6.Final" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
             </expand>
             <select />
@@ -227,10 +232,31 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="stage3-module3-task:module-main [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="stage3-module3-task:module-repository [classes]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/module-main" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/module-repository" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="classes" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="stage3-module3-task:module-repository [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/module-repository" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -251,16 +277,18 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Gradle.stage3-module3-task" />
+      <item itemvalue="Gradle.stage3-module3-task:module-repository [classes]" />
+      <item itemvalue="Gradle.stage3-module3-task:module-repository [clean]" />
       <item itemvalue="Gradle.stage3-module3-task [classes]" />
-      <item itemvalue="Gradle.stage3-module3-task:module-main [clean]" />
       <item itemvalue="Gradle.stage3-module3-task [clean]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.stage3-module3-task:module-repository [classes]" />
+        <item itemvalue="Gradle.stage3-module3-task:module-repository [clean]" />
         <item itemvalue="Gradle.stage3-module3-task [classes]" />
         <item itemvalue="Gradle.stage3-module3-task [clean]" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Gradle.stage3-module3-task:module-main [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -292,7 +320,7 @@
       <workItem from="1687083725101" duration="14462000" />
       <workItem from="1687114153673" duration="534000" />
       <workItem from="1687115080767" duration="756000" />
-      <workItem from="1687158946029" duration="2030000" />
+      <workItem from="1687158946029" duration="4506000" />
     </task>
     <servers />
   </component>
@@ -328,7 +356,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/impl/AuthorService.java</url>
-          <line>78</line>
+          <line>71</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -355,11 +383,6 @@
           <url>file://$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/mapper/NewsMapper.java</url>
           <line>18</line>
           <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/module-repository/src/main/java/com/mjc/school/repository/impl/NewsRepository.java</url>
-          <line>85</line>
-          <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/module-service/src/main/java/com/mjc/school/service/impl/NewsService.java</url>

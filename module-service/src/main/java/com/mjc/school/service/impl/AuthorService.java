@@ -7,7 +7,6 @@ import com.mjc.school.service.aop.validator.restriction.CreateValid;
 import com.mjc.school.service.aop.validator.restriction.IsEntityExist;
 import com.mjc.school.service.aop.validator.restriction.UpdateValid;
 import com.mjc.school.service.dto.AuthorDto;
-import com.mjc.school.service.exception.ValidatorException;
 import com.mjc.school.service.mapper.AuthorMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,8 +17,6 @@ import java.time.temporal.ChronoUnit;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
-
-import static com.mjc.school.service.exception.ServiceError.AUTHOR_ID_DOES_NOT_EXIST;
 
 @Service
 public class AuthorService implements BaseService<AuthorDto, AuthorDto, Long> {
@@ -47,11 +44,7 @@ public class AuthorService implements BaseService<AuthorDto, AuthorDto, Long> {
     @Transactional(readOnly = true)
     public AuthorDto readById(@IsEntityExist Long id) {
         Optional<Author> author = authorRepository.readById(id);
-//        if (author.isPresent()) {
         return mapper.toDto(author.get());
-//        } else {
-//            throw new ValidatorException(String.format(AUTHOR_ID_DOES_NOT_EXIST.getMessage(), id));
-//        }
     }
 
     @Override

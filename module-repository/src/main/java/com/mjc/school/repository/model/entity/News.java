@@ -1,12 +1,12 @@
 package com.mjc.school.repository.model.entity;
 
 import com.mjc.school.repository.model.BaseEntity;
-import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
+import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.Set;
 

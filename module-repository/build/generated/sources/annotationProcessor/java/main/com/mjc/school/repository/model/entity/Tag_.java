@@ -1,9 +1,9 @@
 package com.mjc.school.repository.model.entity;
 
-import jakarta.persistence.metamodel.ListAttribute;
-import jakarta.persistence.metamodel.SingularAttribute;
-import jakarta.persistence.metamodel.StaticMetamodel;
-import javax.annotation.processing.Generated;
+import javax.annotation.Generated;
+import javax.persistence.metamodel.ListAttribute;
+import javax.persistence.metamodel.SingularAttribute;
+import javax.persistence.metamodel.StaticMetamodel;
 
 @Generated(value = "org.hibernate.jpamodelgen.JPAMetaModelEntityProcessor")
 @StaticMetamodel(Tag.class)

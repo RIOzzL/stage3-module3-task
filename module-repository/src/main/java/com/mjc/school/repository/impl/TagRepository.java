@@ -2,10 +2,9 @@ package com.mjc.school.repository.impl;
 
 import com.mjc.school.repository.BaseRepository;
 import com.mjc.school.repository.model.entity.Tag;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
 
+import javax.persistence.*;
 import java.util.List;
 import java.util.Optional;
 

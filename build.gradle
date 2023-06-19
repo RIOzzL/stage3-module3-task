@@ -33,7 +33,9 @@ subprojects {
         // https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api
         implementation 'javax.persistence:javax.persistence-api:2.2'
         // https://mvnrepository.com/artifact/org.hibernate/hibernate-core
-        implementation 'org.hibernate:hibernate-core:5.6.15.Final'
+//        implementation 'org.hibernate:hibernate-core:5.6.15.Final'
+// https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api
+        implementation 'javax.xml.bind:jaxb-api:2.3.0'
 
 
         testImplementation "org.springframework:spring-test:$springVersion"
@@ -56,9 +58,7 @@ task repack(type: Jar, dependsOn: ':module-main:build') {
         def buildJar = zipTree("${project(':module-main').buildDir}/libs/module-main.jar")
         from(buildJar) { into('/') }
         manifest {
-            attributes(
-                    'Main-Class': 'com.mjc.school.Main'
-            )
+            attributes('Main-Class': 'com.mjc.school.Main')
         }
     }
 }
