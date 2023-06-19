@@ -43,11 +43,7 @@ public class TagService implements BaseService<TagDto, TagDto, Long> {
     @Override
     public TagDto readById(@IsEntityExist Long id) {
         Optional<Tag> tag = tagRepository.readById(id);
-        if (tag.isPresent()) {
-            return tagMapper.toDto(tag.get());
-        } else {
-            throw new ValidatorException(String.format(TAG_ID_DOES_NOT_EXIST.getMessage(), id));
-        }
+        return tagMapper.toDto(tag.get());
     }
 
     @Transactional
