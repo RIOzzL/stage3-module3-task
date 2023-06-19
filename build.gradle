@@ -30,18 +30,13 @@ subprojects {
         compileOnly "org.projectlombok:lombok:$lombokVersion"
         annotationProcessor "org.projectlombok:lombok:$lombokAnnotationVersion"
 
-        // https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api
         implementation 'javax.persistence:javax.persistence-api:2.2'
-        // https://mvnrepository.com/artifact/org.hibernate/hibernate-core
-//        implementation 'org.hibernate:hibernate-core:5.6.15.Final'
-// https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api
         implementation 'javax.xml.bind:jaxb-api:2.3.0'
 
 
         testImplementation "org.springframework:spring-test:$springVersion"
         testImplementation "org.junit.jupiter:junit-jupiter-api:$jupiterVersion"
         testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$jupiterVersion"
-        testImplementation "com.tngtech.archunit:archunit:$archUnitVersion"
         // https://mvnrepository.com/artifact/com.tngtech.archunit/archunit-junit5
         testImplementation "com.tngtech.archunit:archunit-junit5:$archunitJunit5Version"
         testImplementation "org.assertj:assertj-core:$assertjVersion"
