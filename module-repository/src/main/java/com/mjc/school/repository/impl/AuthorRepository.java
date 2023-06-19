@@ -3,9 +3,9 @@ package com.mjc.school.repository.impl;
 import com.mjc.school.repository.BaseRepository;
 import com.mjc.school.repository.aop.annotation.OnDelete;
 import com.mjc.school.repository.model.entity.Author;
-import org.hibernate.Session;
 import org.springframework.stereotype.Repository;
 
+import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;
 import java.util.Optional;
@@ -18,28 +18,26 @@ public class AuthorRepository implements BaseRepository<Author, Long> {
     private static final String UPDATE_AUTHOR = "UPDATE Author a set  a.name = :name, a.createDate = :create_date," +
             "a.lastUpdateDate = :last_update_date, a.news = :news " +
             "where a.id = :id";
-    private static final String DELETE_BY_ID = "DELETE Author a WHERE a.id = :id";
-
-    // Repository with using Hibernate implementation JPA
+    private static final String DELETE_BY_ID = "DELETE FROM Author a WHERE a.id = :id";
     @PersistenceContext
-    private Session session;
+    private EntityManager entityManager;
 
 
     @Override
     public List<Author> readAll() {
-        return session.createQuery(READ_ALL, Author.class).list();
+        return entityManager.createQuery(READ_ALL, Author.class).getResultList();
     }
 
     @Override
     public Optional<Author> readById(Long id) {
-        return session.createQuery(READ_BY_ID, Author.class)
+        return Optional.ofNullable(entityManager.createQuery(READ_BY_ID, Author.class)
                 .setParameter("id", id)
-                .uniqueResultOptional();
+                .getSingleResult());
     }
 
     @Override
     public Author create(Author entity) {
-        session.persist(entity);
+        entityManager.persist(entity);
         return entity;
     }
 
@@ -47,7 +45,7 @@ public class AuthorRepository implements BaseRepository<Author, Long> {
     public Author update(Author updatedAuthor) {
         // Do not need existById
         if (existById(updatedAuthor.getId())) {
-            int updatedRow = session.createQuery(UPDATE_AUTHOR, Author.class)
+            int updatedRow = entityManager.createQuery(UPDATE_AUTHOR, Author.class)
                     .setParameter("name", updatedAuthor.getName())
                     .setParameter("create_date", updatedAuthor.getCreateDate())
                     .setParameter("last_update_date", updatedAuthor.getLastUpdateDate())
@@ -64,7 +62,7 @@ public class AuthorRepository implements BaseRepository<Author, Long> {
     @OnDelete
     @Override
     public boolean deleteById(Long id) {
-        int deletedRow = session.createQuery(DELETE_BY_ID)
+        int deletedRow = entityManager.createQuery(DELETE_BY_ID)
                 .setParameter("id", id)
                 .executeUpdate();
         return true;

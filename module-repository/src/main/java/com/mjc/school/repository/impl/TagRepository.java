@@ -4,7 +4,8 @@ import com.mjc.school.repository.BaseRepository;
 import com.mjc.school.repository.model.entity.Tag;
 import org.springframework.stereotype.Repository;
 
-import javax.persistence.*;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import java.util.List;
 import java.util.Optional;
 
